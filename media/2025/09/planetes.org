@@ -1,6 +1,7 @@
 #+TITLE: Anime review: Planetes
 #+AUTHOR: pecan
 #+DATE: 2025-09-03
+#+BLOG_TAGS: review anime
 
 * I.
 /Planetes/ is a Greek word meaning ‘wanderer’; as one might expect it is also the source of the word ‘planet’—wandering
@@ -17,7 +18,7 @@ speculative premise and (ironically for a show about space) handles it in an ext
 is all very well-researched but even more than that the social and political factors and motivations for space
 development are all throughly explored and never once did I think “hm this seems like a bit of a stretch”. It feels all
 the more prescient considering the show aired in 2003-2004, shortly after the beginning of the ISS era and well before
-the current era of private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are
+the current age of private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are
 literally working on the things in the show and it’s not at all hard to imagine a corporation like Technora (the main
 corporation in Planetes) developing out of the current private space landscape.
 
