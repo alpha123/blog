@@ -66,7 +66,7 @@
 			<div class="separator"></div>
 			<button aria-label="Search">Search</button>
 			<button aria-label="Favorites">Favorites</button>
-			<button aria-label="History">History</button>
+			<a href="/media/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
 			<a aria-label="Mail">
 				<xsl:attribute name="href">
