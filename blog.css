@@ -71,10 +71,10 @@ article { margin: 1em auto; width: 80%; }
 	top: 0;
 	width: 20px;
 }
-button[aria-label="Back"]::before { background: url(../../../ui-icons-grayscale.png) 0 0; }
-button[aria-label="Back"]:hover::before { background: url(../../../ui-icons.png) 0 0; }
-button[aria-label="Forward"]::before { background: url(../../../ui-icons-grayscale.png) -20px 0; }
-button[aria-label="Forward"]:hover::before { background: url(../../../ui-icons.png) -20px 0; }
+[aria-label="Back"]::before { background: url(../../../ui-icons-grayscale.png) 0 0; }
+[aria-label="Back"]:not([disabled]):hover::before { background: url(../../../ui-icons.png) 0 0; }
+[aria-label="Forward"]::before { background: url(../../../ui-icons-grayscale.png) -20px 0; }
+[aria-label="Forward"]:not([disabled]):hover::before { background: url(../../../ui-icons.png) -20px 0; }
 button[aria-label="Stop"]::before { background: url(../../../ui-icons-grayscale.png) -40px 0; }
 button[aria-label="Stop"]:hover::before { background: url(../../../ui-icons.png) -40px 0; }
 a[aria-label="Refresh"]::before { background: url(../../../ui-icons-grayscale.png) -60px 0; }

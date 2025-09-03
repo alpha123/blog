@@ -33,8 +33,14 @@
 			</body>
 		</html>
 	</xsl:template>
+	<xsl:template name="urlForPost">
+		<xsl:param name="slug" />
+		<xsl:param name="date" />
+		<xsl:value-of select="concat('/media/', substring-before($date,'-'), '/', substring-before(substring-after($date,'-'),'-'), '/', $slug, '.xhtml')" />
+	</xsl:template>
 	<xsl:template name="browserchrome">
 		<xsl:param name="title" />
+		<xsl:param name="slug" />
 		<xsl:param name="url" />
 		<header class="title-bar">
 			<div class="title-bar-text"><h1><xsl:value-of select="$title" /> - Microsoft Internet Explorer</h1></div>
@@ -53,8 +59,42 @@
 			<div class="menu-item"><span class="hotunderline">H</span>elp</div>
 		</section>
 		<section class="toolbar buttonsbar">
-			<button aria-label="Back">Back</button>
-			<button aria-label="Forward">Forward</button>
+			<xsl:if test="not(document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1])">
+				<button aria-label="Back" disabled="disabled">Back</button>
+			</xsl:if>
+			<xsl:if test="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
+				<a aria-label="Back">
+					<xsl:attribute name="href">
+						<xsl:call-template name="urlForPost">
+							<xsl:with-param name="slug">
+								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
+							</xsl:with-param>
+							<xsl:with-param name="date">
+								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
+							</xsl:with-param>
+						</xsl:call-template>
+					</xsl:attribute>
+					<span>Back</span>
+				</a>
+			</xsl:if>
+			<xsl:if test="not(document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1])">
+				<button aria-label="Forward" disabled="disabled">Forward</button>
+			</xsl:if>
+			<xsl:if test="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
+				<a aria-label="Forward">
+					<xsl:attribute name="href">
+						<xsl:call-template name="urlForPost">
+							<xsl:with-param name="slug">
+								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
+							</xsl:with-param>
+							<xsl:with-param name="date">
+								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
+							</xsl:with-param>
+						</xsl:call-template>
+					</xsl:attribute>
+					<span>Forward</span>
+				</a>
+			</xsl:if>
 			<button aria-label="Stop">Stop</button>
 			<a aria-label="Refresh">
 				<xsl:attribute name="href">
@@ -86,11 +126,6 @@
 			</input>
 		</section>
 	</xsl:template>
-	<xsl:template name="urlForPost">
-		<xsl:param name="slug" />
-		<xsl:param name="date" />
-		<xsl:value-of select="concat('/media/', substring-before($date,'-'), '/', substring-before(substring-after($date,'-'),'-'), '/', $slug, '.xhtml')" />
-	</xsl:template>
 	<xsl:template match="post">
 		<xsl:variable name="slug" select="/post/@slug" />
 		<xsl:variable name="published" select="/post/@published" />
@@ -109,6 +144,9 @@
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title">
 					<xsl:value-of select="title" />
+				</xsl:with-param>
+				<xsl:with-param name="slug">
+					<xsl:value-of select="$slug" />
 				</xsl:with-param>
 				<xsl:with-param name="url">
 					<xsl:value-of select="$fullLink" />
@@ -140,6 +178,7 @@
 		<article class="window active">
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title">Archive</xsl:with-param>
+				<xsl:with-param name="slug">archive</xsl:with-param>
 				<xsl:with-param name="url">/media/archive.xhtml</xsl:with-param>
 			</xsl:call-template>
 			<section class="content">
@@ -161,11 +200,11 @@
 							<xsl:value-of select="@slug" />
 						</xsl:with-param>
 						<xsl:with-param name="date">
-							<xsl:value-of select="@published_at" />
+							<xsl:value-of select="@published" />
 						</xsl:with-param>
 					</xsl:call-template>
 				</xsl:attribute>
-				<xsl:value-of select="@published_at" /> – <xsl:value-of select="text()" />
+				<xsl:value-of select="@published" /> – <xsl:value-of select="text()" />
 			</a>
 		</li>
 	</xsl:template>
