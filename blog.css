@@ -110,11 +110,20 @@ label[for="address"] { margin: 0 4px 0 8px; }
 	overflow: auto;
 	padding: 0 0.5em;
 }
-section.content p {
-	color: #000;
-	font-size: 14px;
+.content h2 { font-size: 2rem; }
+.content p { font-size: 14px; }
+.content img { max-width: 800px; }
+.imggroup > p {
+	display: grid;
+	gap: 4px 4px;
+	grid-template-columns: repeat(2, 1fr);
 }
-section.content img { max-width: 800px; }
+.imggroup img { width: 100%; }
+blockquote {
+	border-left: 2px solid #c0c0c0;
+	color: #626262;
+	padding-left: 8px;
+}
 figcaption { font-style: italic; }
 .figure-number { display: none; }
 #table-of-contents { display: none; }
