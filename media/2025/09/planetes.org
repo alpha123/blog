@@ -124,23 +124,24 @@ immediate cause areas.
 #+END_EXPORT
 
 What peeves me even more though is the opposite side when people try to justify the costs of space exporation with
-arguments like look how much useful technology came out of the space program in the 50s and 60s; hospitals are full of
-sensors and devices originally invented by NASA, etc. This is not really false, but to me it feels like insane copium to
-try to justify space expenditure in the framework of “but there are still problems on Earth”. I'm not making these
-people up; if you want to see a truly terrible academic paper check out ‘[[https://pmc.ncbi.nlm.nih.gov/articles/PMC10395101/][Space exploration as a catalyst for medical
-innovations]]’ which explicitly tries to directly map problems in space exploration to everyday wellbeing in terrestrial
-healthcare. This is ridiculous, if you want to work on improving the state of ‘At-risk patients with limited healthcare
-access’ then just work on that directly instead of working on some space-based version that might trickle down and
-indirectly improve that. These people are basically just lying to themselves because they think space exploration is
-cool but have the value systems of the people from the previous paragraph that only care about whether something
-directly and immediately saves someone's life/advances particular social causes. Just be honest that the reason you're
-doing it is because it's a really awesome thing to do. The first people are annoying, but I think they usually earnestly
-want to help people; the second people are dishonest. This is also how I feel about people who try to justify coral reef
-conservation or whatever because they found some painkiller in cone snails once (which is nearly never used because it
-has to be given via direct injection into the spinal fluid) and the world's most expensive breast cancer drug in a
-marine sponge. This is an incredibly inefficient method of drug discovery and you should save coral reefs because
-they're really freaking awesome and it's good to have animals on this Earth because they're interesting and valuable in
-and of themselves rather than because of what they can do for us. Anyway. Rant over.
+arguments about how much useful technology came out of the space program in the 50s and 60s, how NASA spurred the
+development of the integrated circuit, how hospitals are full of sensors and devices originally invented by NASA, etc.
+This is not really false, but to me it feels like insane copium in an attempt to justify space expenditure within the
+framework of “but there are still problems on Earth”. I'm not making these people up; for an example check out this
+academic paper ‘[[https://pmc.ncbi.nlm.nih.gov/articles/PMC10395101/][Space exploration as a catalyst for medical innovations]]’ which explicitly tries to directly map problems
+in space exploration to everyday wellbeing in terrestrial healthcare. I find this pretty misguided; if you want to work
+on improving the state of ‘At-risk patients with limited healthcare access’ then just work on that directly instead of
+working on some space-based version that might trickle down and indirectly improve that. These people are basically just
+lying to themselves because they think space exploration is cool but have the value systems of the people from the
+previous paragraph that only care about whether something directly and immediately saves someone's life/advances
+particular social causes. Just be honest that the reason you're doing it is because it's a really awesome thing to do.
+The first people are annoying, but I think they usually earnestly want to help people; the second people are dishonest.
+This is also how I feel about people who try to justify coral reef conservation or whatever under guises like they found
+some painkiller in cone snails once (which is nearly never used because it has to be given via direct injection into the
+spinal fluid) and the world's most expensive breast cancer drug in a marine sponge. This is an incredibly inefficient
+method of drug discovery and you should save coral reefs because they're really freaking awesome and it's good to have
+animals on this Earth because they're interesting and valuable in and of themselves rather than because of what they can
+do for us. Anyway. Rant over.
 
 Planetes thankfully avoids that pitfall pretty well, and justifies space exploration largely in terms of romanticism,
 which is what allows it to actually tackle whether this is hopelessly selfish or not.
@@ -157,36 +158,34 @@ which is what allows it to actually tackle whether this is hopelessly selfish or
 I think the portrayal of characters like Locksmith (the Jupiter mission guy) and Hatimaki's father is particularly
 interesting. They are objectively speaking not really good people and yet at the same time it's honestly somewhat
 positive in its portrayal of them. I think it does an extremely good job of striking a balance betwen making you kinda
-dislike them and at the same time respect their pursuit of the PROMETHEAN HUMAN SPIRIT.
+dislike them and at the same time respect their pursuit of the PROMETHEAN HUMAN SPIRIT. Personally I think they're very
+complex characters and I find them a bit morally reprehensible in spite of the fact that I basically agree with their
+goals.
 
-Lately I feel like there's been a resurgence of interest in the Great Man theory of history. Perhaps not among actual
-historians but as like a folk historical framework among laymen, but regardless I do think the role of singular
-individuals in shaping the course of history is prominent in the public consciousness so I think it's a particularly
-interesting time to watch Planetes. This is not to say it is a Great Man show; if anything kind of the opposite and I
-think you'll kind of get out of it what you put into it, but it will at least make you think about your position. [TODO]
-I think they're morally a bit reprehensible and I'm not really happy with Hatimaki either, abandoning his new wife for 7
-years so he can go to Jupiter, but at the same time in his position I'm not really sure I would choose differently. You
-can, at least, understand where he's coming from and why he makes the choices he does.
+Hatimaki himself might be the most developed character of the show [TODO expand] I'm not really happy with him either,
+abandoning his new wife for 7 years so he can go to Jupiter, but at the same time in his position I'm not really sure I
+would choose differently. You can, at least, understand where he's coming from and why he makes the choices he does.
 
 And this is true on the other side too. There's an important arc later in the story revolving around a group of space
 eco-terrorists who are opposed to space development in all forms and two of the major side characters get swept up with
 them because they are unhappy about what the growing wealth disparty between first world and third world countries has
 done to their home countries (which are poor and perpetually embroiled in civil war). And like, the terrorist group is
-depicted pretty horribly. They attempted to sacrifice a city of over 100,000 people for their ends. But I can never
-/once/ say I don't understand why the aforementioned characters would go along with it. They did probably make the wrong
+depicted pretty horribly. They attempted to sacrifice a city of over 100,000 people for their ends. But I can never once
+say I don't understand why the aforementioned characters would go along with it. They did probably make the wrong
 choice, and Claire at least recognizes that, but they made the wrong choice for very empathetic reasons.
 
 For all this I still haven't even talked about the most important factor in the show—Ai. Ai the protagonist, and Ai as
 in love.
 
-[[./img/love.png]]
-
 I think Ai is basically the show's resolution to all of this. She is very idealistic, naively so, but it is precisely
-this that allows her to keep on living in this harsh world. When you have people with a bold dream for the future, and
-people who just want justice for their homeland, is ‘love’ a strong answer? A weak answer? A childlike answer? A wise
-answer? But I think what she means by ‘love’ is really: empathy. Some problems can be solved with empathy, and some
-can't, and there will be a winner and a loser, but don't view them as enemies or take pride in their defeat. Try to love
-them, and respect them, and empathize with them, and in the end Ai really did save someone with the power of love.
+this that allows her to keep on living in this harsh world. When you have people with a bold dream for the future
+clashing with people who just want justice for their homeland, is ‘love’ a strong answer? A weak answer? A childlike
+answer? A wise answer? But I think what she means by ‘love’ is really: empathy. Some problems can be solved with
+empathy, and some can't, and there will be a winner and a loser, but don't view them as enemies or take pride in their
+defeat. Try to love them, and respect them, and empathize with them, and in the end Ai really did save someone with the
+power of love.
+
+[[./img/love.png]]
 
 I'm still not actually sure what I think of the scale expansion through the latter half of the show. We went from
 collecting junk with weirdos to the Jupiter mission and terrorists and it definitely got a lot less happy and sometimes
@@ -194,7 +193,7 @@ kind of painful to watch. Stuff that starts off extremely good and comfy and the
 makes me feel pretty weird, but I can't say I wasn't extremely emotionally invested in it. It certainly makes you
 appreciate how much you were enjoying the smaller scale stuff and what you lost as the stakes get higher, but there's
 also something really emotional about looking back like man how did we get here from back there. And by the end some of
-the scenes are so emotionally poignant you look back at and the weight of everything that has happened hits you like a
+the scenes are so emotionally charged you look back and the weight of everything that has happened hits you like a
 truck.
 
 #+CAPTION: This is one of the most poignant shots ever I think

@@ -1,7 +1,7 @@
 /*body { background: #3a6ea5; }*/
 body { background: #007a79; overflow: hidden; }
 h1 { font-size: 1em; margin: 0; }
-article { margin: 1em auto; width: 80%; }
+article { margin: 1em auto; width: 70%; }
 .toolbar {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid gray;
@@ -106,12 +106,12 @@ label[for="address"] { margin: 0 4px 0 8px; }
 .content {
 	background: #efe;
 	box-shadow: inset -1px -1px #fff,inset 1px 1px gray,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+	font-size: 14px;
 	height: calc(100vh - 165px);
 	overflow: auto;
-	padding: 0 0.5em;
+	padding: 0 10%;
 }
 .content h2 { font-size: 2rem; }
-.content p { font-size: 14px; }
 .content img { max-width: 800px; }
 .imggroup > p {
 	display: grid;
@@ -124,7 +124,7 @@ blockquote {
 	color: #626262;
 	padding-left: 8px;
 }
-figcaption { font-style: italic; }
+figcaption { font-size: 0.79em; font-style: italic; }
 .figure-number { display: none; }
 #table-of-contents { display: none; }
 .section-number-2 { display: none; }
