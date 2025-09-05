@@ -30,6 +30,27 @@
 			<body>
 				<xsl:apply-templates select="post" />
 				<xsl:apply-templates select="archive" />
+				<button id="minimizedbar" onclick="restore()"><img src="/ie.png" /><span></span></button>
+				<script><![CDATA[
+				function minimize() {
+					var win = document.querySelector('.window'), bar = document.getElementById('minimizedbar');
+					win.style.display = 'none';
+					bar.lastElementChild.textContent = win.querySelector('h1').textContent;
+					bar.style.display = 'flex';
+				}
+				function restore() {
+					document.querySelector('.window').style.display = 'block';
+					document.getElementById('minimizedbar').style.display = 'none';
+				}
+				function toggleMaximize(e) {
+					document.querySelector('.window').classList.toggle('maximized');
+					var btn = e.target;
+					btn.setAttribute('aria-label', btn.getAttribute('aria-label') == 'Maximize' ? 'Restore' : 'Maximize');
+				}
+				function close_() {
+					document.querySelector('.window').style.display = 'none';
+				}
+				]]></script>
 			</body>
 		</html>
 	</xsl:template>
@@ -43,11 +64,14 @@
 		<xsl:param name="slug" />
 		<xsl:param name="url" />
 		<header class="title-bar">
-			<div class="title-bar-text"><h1><xsl:value-of select="$title" /> - Microsoft Internet Explorer</h1></div>
+			<div class="title-bar-text">
+				<img src="/ie.png" />
+				<h1><xsl:value-of select="$title" /> - Microsoft Internet Explorer</h1>
+			</div>
 			<div class="title-bar-controls">
-				<button aria-label="Minimize"></button>
-				<button aria-label="Maximize"></button>
-				<button aria-label="Close"></button>
+				<button aria-label="Minimize" onclick="minimize()"></button>
+				<button aria-label="Maximize" onclick="toggleMaximize(event)"></button>
+				<button aria-label="Close" onclick="close_()"></button>
 			</div>
 		</header>
 		<section class="toolbar menubar">
@@ -114,7 +138,7 @@
 				</xsl:attribute>
 				<span>Mail</span>
 			</a>
-			<button aria-label="Print">Print</button>
+			<button aria-label="Print" onclick="print()">Print</button>
 		</section>
 		<section class="toolbar addressbar">
 			<label for="address">A<span class="hotunderline">d</span>dress</label>
