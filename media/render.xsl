@@ -90,12 +90,8 @@
 				<a aria-label="Back">
 					<xsl:attribute name="href">
 						<xsl:call-template name="urlForPost">
-							<xsl:with-param name="slug">
-								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
-							</xsl:with-param>
-							<xsl:with-param name="date">
-								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
-							</xsl:with-param>
+							<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
+							<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
 						</xsl:call-template>
 					</xsl:attribute>
 					<span>Back</span>
@@ -108,12 +104,8 @@
 				<a aria-label="Forward">
 					<xsl:attribute name="href">
 						<xsl:call-template name="urlForPost">
-							<xsl:with-param name="slug">
-								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
-							</xsl:with-param>
-							<xsl:with-param name="date">
-								<xsl:value-of select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
-							</xsl:with-param>
+							<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
+							<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
 						</xsl:call-template>
 					</xsl:attribute>
 					<span>Forward</span>
@@ -153,28 +145,17 @@
 	<xsl:template match="post">
 		<xsl:variable name="slug" select="/post/@slug" />
 		<xsl:variable name="published" select="/post/@published" />
-		<!--<xsl:variable name="fullLink" select="concat('https://alpha123.github.io/blog/think/', $slug, '.xhtml')" />-->
 		<xsl:variable name="fullLink">
 			<xsl:call-template name="urlForPost">
-				<xsl:with-param name="slug">
-					<xsl:value-of select="$slug" />
-				</xsl:with-param>
-				<xsl:with-param name="date">
-					<xsl:value-of select="$published" />
-				</xsl:with-param>
+				<xsl:with-param name="slug" select="$slug" />
+				<xsl:with-param name="date" select="$published" />
 			</xsl:call-template>
 		</xsl:variable>
 		<article class="window active">
 			<xsl:call-template name="browserchrome">
-				<xsl:with-param name="title">
-					<xsl:value-of select="title" />
-				</xsl:with-param>
-				<xsl:with-param name="slug">
-					<xsl:value-of select="$slug" />
-				</xsl:with-param>
-				<xsl:with-param name="url">
-					<xsl:value-of select="$fullLink" />
-				</xsl:with-param>
+				<xsl:with-param name="title" select="title" />
+				<xsl:with-param name="slug" select="$slug" />
+				<xsl:with-param name="url" select="$fullLink" />
 			</xsl:call-template>
 			<section class="content">
 				<xsl:copy-of select="content/*" />
