@@ -118,7 +118,7 @@
 				</xsl:attribute>
 				<span>Refresh</span>
 			</a>
-			<a href="/" aria-label="Home"><span>Home</span></a>
+			<a href="/media/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
 			<button aria-label="Search">Search</button>
 			<button aria-label="Favorites">Favorites</button>
