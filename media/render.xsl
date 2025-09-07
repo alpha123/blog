@@ -210,6 +210,7 @@
 				</xsl:apply-templates>
 			</section>
 			<footer class="status-bar">
+				<p class="status-bar-field">&#160;</p>
 			</footer>
 		</article>
 	</xsl:template>
