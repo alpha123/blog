@@ -133,11 +133,11 @@ label[for="address"] { margin: 0 4px 0 8px; }
 	background: #efe;
 	box-shadow: inset -1px -1px #fff,inset 1px 1px gray,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
 	font-size: 14px;
-	height: calc(100vh - 145px - 2em);
+	height: calc(100vh - 140px - 2em);
 	overflow: auto;
 	padding: 0 10%;
 }
-.maximized .content { height: calc(100vh - 145px); }
+.maximized .content { height: calc(100vh - 140px); }
 .content h2 { font-size: 2rem; }
 .content img { max-width: 800px; }
 .imggroup > p {
