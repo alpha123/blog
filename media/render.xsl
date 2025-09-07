@@ -12,8 +12,8 @@
 						<xsl:when test="/post">
 							<xsl:value-of select="/post/title" />
 						</xsl:when>
-						<xsl:when test="/archive">
-							Archive
+						<xsl:when test="/page">
+							<xsl:value-of select="/page/title" />
 						</xsl:when>
 						<xsl:otherwise>
 							unknown page
@@ -29,7 +29,7 @@
 			</head>
 			<body>
 				<xsl:apply-templates select="post" />
-				<xsl:apply-templates select="archive" />
+				<xsl:apply-templates select="page" />
 				<button id="minimizedbar" onclick="restore()"><img src="/ie.png" /><span></span></button>
 				<script><![CDATA[
 				function minimize() {
@@ -177,9 +177,7 @@
 				</xsl:with-param>
 			</xsl:call-template>
 			<section class="content">
-				<xsl:for-each select="contents/*">
-					<xsl:copy-of select="." />
-				</xsl:for-each>
+				<xsl:copy-of select="content/*" />
 			</section>
 			<footer class="status-bar">
 				<p class="status-bar-field">
@@ -198,34 +196,51 @@
 			</footer>
 		</article>
 	</xsl:template>
-	<xsl:template match="archive">
+	<xsl:template match="page">
+		<xsl:variable name="postsxml" select="/page/@posts" />
 		<article class="window active">
 			<xsl:call-template name="browserchrome">
-				<xsl:with-param name="title">Archive</xsl:with-param>
-				<xsl:with-param name="slug">archive</xsl:with-param>
-				<xsl:with-param name="url">/media/archive.xhtml</xsl:with-param>
+				<xsl:with-param name="title" select="title" />
+				<xsl:with-param name="slug" select="@slug" />
+				<xsl:with-param name="url" select="concat('/media/', @slug, '.xhtml')" />
 			</xsl:call-template>
 			<section class="content">
-				<h2>Posts</h2>
-				<ul>
-					<xsl:apply-templates select="document(@posts)//posttitle" />
-				</ul>
+				<xsl:apply-templates select="node()|@*">
+					<xsl:with-param name="posts" select="$postsxml" />
+				</xsl:apply-templates>
 			</section>
 			<footer class="status-bar">
 			</footer>
 		</article>
+	</xsl:template>
+	<xsl:template match="node()|@*">
+		<xsl:param name="posts" />
+		<xsl:copy>
+			<xsl:apply-templates select="node()|@*">
+				<xsl:with-param name="posts" select="$posts" />
+			</xsl:apply-templates>
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="postlist[@recent='all']">
+		<xsl:param name="posts" />
+		<ul>
+			<xsl:apply-templates select="document($posts)//posttitle" />
+		</ul>
+	</xsl:template>
+	<xsl:template match="postlist">
+		<xsl:param name="posts" />
+		<xsl:variable name="recent" select="@recent" />
+		<ul>
+			<xsl:apply-templates select="document($posts)//posttitle[position() &lt;= $recent]" />
+		</ul>
 	</xsl:template>
 	<xsl:template match="posttitle">
 		<li>
 			<a>
 				<xsl:attribute name="href">
 					<xsl:call-template name="urlForPost">
-						<xsl:with-param name="slug">
-							<xsl:value-of select="@slug" />
-						</xsl:with-param>
-						<xsl:with-param name="date">
-							<xsl:value-of select="@published" />
-						</xsl:with-param>
+						<xsl:with-param name="slug" select="@slug" />
+						<xsl:with-param name="date" select="@published" />
 					</xsl:call-template>
 				</xsl:attribute>
 				<xsl:value-of select="@published" /> – <xsl:value-of select="text()" />

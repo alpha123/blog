@@ -22,7 +22,7 @@
 	 "<title>" (my/ob-get-prop :title info) "</title>"
 	 "<author>" (my/ob-get-prop :author info) "</author>"
 	 "<tags>" (mapconcat (lambda (tg) (format "<tag>%s</tag>" tg)) tags) "</tags>"
-	 "<contents>" contents "</contents>"
+	 "<content>" contents "</content>"
 	 "</post>")))
 
 (org-export-define-derived-backend 'blog 'html
@@ -50,7 +50,7 @@
 	   "insert into posts values (?1, ?2, ?3, datetime()) on conflict do update set title=?2,published_at=?3,exported_at=datetime();"
 	   (list slug *my/ob-last-exported-title* *my/ob-last-exported-date*))
 	  (dolist (tag *my/ob-last-exported-tags*)
-		(sqlite-execute *temp/blog-db* "insert into posts_tags values (?1, ?2) on conflict ignore;" (list slug tag))))
+		(sqlite-execute *temp/blog-db* "insert or ignore into posts_tags values (?1, ?2);" (list slug tag))))
 	(let ((posts (sqlite-select *temp/blog-db* "select slug, published_at, title from posts order by published_at desc" nil 'set)))
 	  (with-temp-file (expand-file-name "posts.xml" basedir)
 		(insert "<?xml version=\"1.0\" encoding=\"utf-8\"?>")
