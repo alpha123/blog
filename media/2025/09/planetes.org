@@ -136,12 +136,12 @@ lying to themselves because they think space exploration is cool but have the va
 previous paragraph that only care about whether something directly and immediately saves someone's life/advances
 particular social causes. Just be honest that the reason you're doing it is because it's a really awesome thing to do.
 The first people are annoying, but I think they usually earnestly want to help people; the second people are dishonest.
-This is also how I feel about people who try to justify coral reef conservation or whatever under guises like they found
-some painkiller in cone snails once (which is nearly never used because it has to be given via direct injection into the
-spinal fluid) and the world's most expensive breast cancer drug in a marine sponge. This is an incredibly inefficient
-method of drug discovery and you should save coral reefs because they're really freaking awesome and it's good to have
-animals on this Earth because they're interesting and valuable in and of themselves rather than because of what they can
-do for us. Anyway. Rant over.
+This is also how I feel about people who try to justify coral reef conservation or whatever under guises like how [[https://en.wikipedia.org/wiki/Ziconotide][some
+painkiller]] was found in cone snails once (which is nearly never used because it has to be given via direct injection
+into the spinal fluid) or a [[https://en.wikipedia.org/wiki/Eribulin][breast cancer drug]] was derived from a marine sponge (which is extremely expensive to
+produce). This is an incredibly inefficient method of drug discovery and you should save coral reefs because they're
+really freaking awesome and it's good to have animals on this Earth because they're interesting and valuable in and of
+themselves rather than because of what they can do for us. Anyway. Rant over.
 
 Planetes thankfully avoids that pitfall pretty well, and justifies space exploration largely in terms of romanticism,
 which is what allows it to actually tackle whether this is hopelessly selfish or not.
@@ -226,6 +226,6 @@ the crux of an episode earlier come back again later as important background for
 ** post bubble japan
 nostalgia for an era that im not even really sure if it was real or not
 ** -
-Pleased to share this world with you, fellow human.
+It's a pleasure to share this world with you, fellow human.
 
 [[./img/alive.png]]
