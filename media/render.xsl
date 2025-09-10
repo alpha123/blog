@@ -120,13 +120,13 @@
 			</a>
 			<a href="/media/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
-			<button aria-label="Search">Search</button>
-			<button aria-label="Favorites">Favorites</button>
+			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Fmedia" aria-label="Search">Search</a>
+			<a href="/media/favorites.xhtml" aria-label="Favorites">Favorites</button>
 			<a href="/media/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
 			<a aria-label="Mail">
 				<xsl:attribute name="href">
-					<xsl:value-of select="concat('mailto:?subject=Link to ', /post/title, '&amp;body=Hi, I found this page and thought you might like it ', $baseUrl, $url)" />
+					<xsl:value-of select="concat('mailto:?subject=Link to ', /post/title, '&amp;body=Hi, I found this blog post and thought you might like it ', $baseUrl, $url)" />
 				</xsl:attribute>
 				<span>Mail</span>
 			</a>
