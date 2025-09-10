@@ -74,15 +74,15 @@
 				<button aria-label="Close" onclick="close_()"></button>
 			</div>
 		</header>
-		<section class="toolbar menubar">
+		<div class="toolbar menubar">
 			<div class="menu-item"><span class="hotunderline">F</span>ile</div>
 			<div class="menu-item"><span class="hotunderline">E</span>dit</div>
 			<div class="menu-item"><span class="hotunderline">V</span>iew</div>
 			<div class="menu-item">F<span class="hotunderline">a</span>vorites</div>
 			<div class="menu-item"><span class="hotunderline">T</span>ools</div>
 			<div class="menu-item"><span class="hotunderline">H</span>elp</div>
-		</section>
-		<section class="toolbar buttonsbar">
+		</div>
+		<nav class="toolbar buttonsbar">
 			<xsl:if test="not(document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1])">
 				<button aria-label="Back" disabled="disabled">Back</button>
 			</xsl:if>
@@ -121,7 +121,7 @@
 			<a href="/media/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
 			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Fmedia" aria-label="Search">Search</a>
-			<a href="/media/favorites.xhtml" aria-label="Favorites">Favorites</button>
+			<a href="/media/favorites.xhtml" aria-label="Favorites">Favorites</a>
 			<a href="/media/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
 			<a aria-label="Mail">
@@ -131,8 +131,8 @@
 				<span>Mail</span>
 			</a>
 			<button aria-label="Print" onclick="print()">Print</button>
-		</section>
-		<section class="toolbar addressbar">
+		</nav>
+		<div class="toolbar addressbar">
 			<label for="address">A<span class="hotunderline">d</span>dress</label>
 			<img src="/ie.png" />
 			<input type="text" id="address">
@@ -140,7 +140,7 @@
 					<xsl:value-of select="concat($baseUrl, $url)" />
 				</xsl:attribute>
 			</input>
-		</section>
+		</div>
 	</xsl:template>
 	<xsl:template match="post">
 		<xsl:variable name="slug" select="/post/@slug" />
@@ -151,15 +151,17 @@
 				<xsl:with-param name="date" select="$published" />
 			</xsl:call-template>
 		</xsl:variable>
-		<article class="window active">
+		<div class="window active">
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title" select="title" />
 				<xsl:with-param name="slug" select="$slug" />
 				<xsl:with-param name="url" select="$fullLink" />
 			</xsl:call-template>
-			<section class="content">
-				<xsl:copy-of select="content/*" />
-			</section>
+			<main>
+				<article>
+					<xsl:copy-of select="content/*" />
+				</article>
+			</main>
 			<footer class="status-bar">
 				<p class="status-bar-field">
 					Published:
@@ -175,25 +177,25 @@
 					<xsl:value-of select="/post/author" />
 				</p>
 			</footer>
-		</article>
+		</div>
 	</xsl:template>
 	<xsl:template match="page">
 		<xsl:variable name="postsxml" select="/page/@posts" />
-		<article class="window active">
+		<div class="window active">
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title" select="title" />
 				<xsl:with-param name="slug" select="@slug" />
 				<xsl:with-param name="url" select="concat('/media/', @slug, '.xhtml')" />
 			</xsl:call-template>
-			<section class="content">
-				<xsl:apply-templates select="node()|@*">
+			<main>
+				<xsl:apply-templates select="content/node()">
 					<xsl:with-param name="posts" select="$postsxml" />
 				</xsl:apply-templates>
-			</section>
+			</main>
 			<footer class="status-bar">
 				<p class="status-bar-field">&#160;</p>
 			</footer>
-		</article>
+		</div>
 	</xsl:template>
 	<xsl:template match="node()|@*">
 		<xsl:param name="posts" />
