@@ -72,7 +72,7 @@ h1 { font-size: 1em; margin: 0; }
 .toolbar button, .toolbar a {
 	box-shadow: none;
 	box-sizing: border-box;
-	cursor: pointer;
+	cursor: default;
 	display: inline-block;
 	height: 40px;
 	line-height: 3em;
