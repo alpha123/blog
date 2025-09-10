@@ -28,6 +28,7 @@
 				<link rel="stylesheet" href="/blog.css" />
 			</head>
 			<body>
+				<a href="#main" id="skipnav">Skip to main content</a>
 				<xsl:apply-templates select="post" />
 				<xsl:apply-templates select="page" />
 				<button id="minimizedbar" onclick="restore()"><img src="/ie.png" /><span></span></button>
@@ -157,7 +158,7 @@
 				<xsl:with-param name="slug" select="$slug" />
 				<xsl:with-param name="url" select="$fullLink" />
 			</xsl:call-template>
-			<main>
+			<main id="main">
 				<article>
 					<xsl:copy-of select="content/*" />
 				</article>
@@ -187,7 +188,7 @@
 				<xsl:with-param name="slug" select="@slug" />
 				<xsl:with-param name="url" select="concat('/media/', @slug, '.xhtml')" />
 			</xsl:call-template>
-			<main>
+			<main id="main">
 				<xsl:apply-templates select="content/node()">
 					<xsl:with-param name="posts" select="$postsxml" />
 				</xsl:apply-templates>

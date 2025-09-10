@@ -1,6 +1,8 @@
 /*body { background: #3a6ea5; }*/
 body { background: #007a79; overflow: hidden; }
 h1 { font-size: 1em; margin: 0; }
+#skipnav { left: -999px; position: absolute; }
+#skipnav:focus { left: 0; }
 .window {
 	box-sizing: border-box;
 	margin: 1em auto;
