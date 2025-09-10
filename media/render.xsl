@@ -83,34 +83,38 @@
 			<div class="menu-item"><span class="hotunderline">H</span>elp</div>
 		</div>
 		<nav class="toolbar buttonsbar">
-			<xsl:if test="not(document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1])">
-				<button aria-label="Back" disabled="disabled">Back</button>
-			</xsl:if>
-			<xsl:if test="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
-				<a aria-label="Back">
-					<xsl:attribute name="href">
-						<xsl:call-template name="urlForPost">
-							<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
-							<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
-						</xsl:call-template>
-					</xsl:attribute>
-					<span>Back</span>
-				</a>
-			</xsl:if>
-			<xsl:if test="not(document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1])">
-				<button aria-label="Forward" disabled="disabled">Forward</button>
-			</xsl:if>
-			<xsl:if test="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
-				<a aria-label="Forward">
-					<xsl:attribute name="href">
-						<xsl:call-template name="urlForPost">
-							<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
-							<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
-						</xsl:call-template>
-					</xsl:attribute>
-					<span>Forward</span>
-				</a>
-			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
+					<a aria-label="Back">
+						<xsl:attribute name="href">
+							<xsl:call-template name="urlForPost">
+								<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
+							</xsl:call-template>
+						</xsl:attribute>
+						<span>Back</span>
+					</a>
+				</xsl:when>
+				<xsl:otherwise>
+					<button aria-label="Back" disabled="disabled">Back</button>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
+					<a aria-label="Forward">
+						<xsl:attribute name="href">
+							<xsl:call-template name="urlForPost">
+								<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
+							</xsl:call-template>
+						</xsl:attribute>
+						<span>Forward</span>
+					</a>
+				</xsl:when>
+				<xsl:otherwise>
+					<button aria-label="Forward" disabled="disabled">Forward</button>
+				</xsl:otherwise>
+			</xsl:choose>
 			<button aria-label="Stop">Stop</button>
 			<a aria-label="Refresh">
 				<xsl:attribute name="href">
