@@ -20,10 +20,6 @@
 						</xsl:otherwise>
 					</xsl:choose> - pecan’s blog
 				</title>
-				<!--
-				<link rel="stylesheet" href="/theme/combined.min.css" />
-				<link rel="stylesheet" href="/theme/skins/2000.css" />
-				-->
 				<link rel="stylesheet" href="/98.css" />
 				<link rel="stylesheet" href="/blog.css" />
 			</head>
