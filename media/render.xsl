@@ -29,6 +29,9 @@
 			</head>
 			<body>
 				<a href="#main" id="skipnav">Skip to main content</a>
+				<header id="banner">
+					<h1><a href="/media/index.xhtml">pecan’s blog</a></h1>
+				</header>
 				<xsl:apply-templates select="post" />
 				<xsl:apply-templates select="page" />
 				<button id="minimizedbar" onclick="restore()"><img src="/ie.png" /><span></span></button>
