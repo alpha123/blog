@@ -57,7 +57,7 @@
 	<xsl:template name="urlForPost">
 		<xsl:param name="slug" />
 		<xsl:param name="date" />
-		<xsl:value-of select="concat('/farrago/', substring-before($date,'-'), '/', substring-before(substring-after($date,'-'),'-'), '/', $slug, '.xhtml')" />
+		<xsl:value-of select="concat('/farrago/', translate($date, '-', '/'), '/', $slug, '.xhtml')" />
 	</xsl:template>
 	<xsl:template name="browserchrome">
 		<xsl:param name="title" />

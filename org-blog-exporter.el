@@ -17,7 +17,7 @@
 	(setq *my/ob-last-exported-tags* tags)
 	(concat
 	 "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
-	 "<?xml-stylesheet type=\"text/xsl\" href=\"../../render.xsl\"?>"
+	 "<?xml-stylesheet type=\"text/xsl\" href=\"../../../render.xsl\"?>"
 	 "<post slug=\"" slug "\" published=\"" (my/ob-get-prop :date info) "\" exported=\"" (format-time-string "%Y-%m-%d %H:%M:%S") "\">"
 	 "<title>" (my/ob-get-prop :title info) "</title>"
 	 "<author>" (my/ob-get-prop :author info) "</author>"
