@@ -16,34 +16,26 @@ Which is to say, Planetes is a very grounded anime.
 This is, of course, just a bit of etymological sleight of hand. But the point remains true: Planetes takes an inherently
 speculative premise and (ironically for a show about space) handles it in an extremely down-to-earth way. The technology
 is all very well-researched but even more than that the social and political factors and motivations for space
-development are all throughly explored and never once did I think “hm this seems like a bit of a stretch”. It feels all
-the more prescient considering the show aired in 2003-2004, shortly after the beginning of the ISS era and well before
-the current age of private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are
+development are all throughly explored and never once did I think poorly justified or unrealistic. It feels all the more
+prescient considering the show aired in 2003-2004, shortly after the beginning of the ISS era and well before the
+current age of private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are
 literally working on the things in the show and it’s not at all hard to imagine a corporation like Technora (the main
 corporation in Planetes) developing out of the current private space landscape.
 
 #+CAPTION: Commitment to realism: they’re still using IPv4 in 2076
 [[./img/ipv4.png]]
 
-The sheer depth of its world irresistably draws you in to it. I think one of the greatest things fiction can achieve is
-making you want to live in its world. Like how Japan seems really nice in anime, and thereby we have weebs, Planetes
-manages to make you a weeb for Planetes.
+This is done so effectively that the Planetes world essentially just feels like a logical extension of our world, and it
+does a good job of emulating the same scale. In spite of focusing on a relatively small cast of characters you still get
+the sense that the world is really big and other things are happening in it, and millions and billions of people are
+living their lives out there even though we only get a window into a few of them.
 
-#+CAPTION: I want to collect space junk so bad
-#+ATTR_HTML: :width 562px
-[[./img/thing_planetes.png]]
-
-To some extent I think everything tries this, but Planetes really succeeds at it. In spite of focusing on a relatively
-small cast of characters you still get the sense that the world is really big and other things are happening in it, and
-millions and billions of people are living their lives out there and we are so privileged to get a window into a few of
-them.
-
-And what a window we get, not just into their lives but directly into their minds. All the characters feel like they
-have reasons for doing the things they do and believing the things they believe, and when that inevitably brings them
-into conflict you can feel that they're both right, and they're both wrong, and how most conflicts are not really the
-result of evil but just the result of having more than one person in the world and the inevitable friction that causes.
-It's really good at getting you in the characters' heads and that makes their suffering and their determination and
-their joy all the more poignant.
+And there's a good deal of depth to the characters it does focus on and they all feel remarkably psychologically fleshed
+out. All the characters feel like they have reasons for doing the things they do and believing the things they believe,
+and when that inevitably brings them into conflict you can feel that they're both right, and they're both wrong, and how
+most conflicts are not really the result of evil but just the result of having more than one person in the world and the
+inevitable friction that causes. It's really good at getting you in the characters' heads and that makes their suffering
+and their determination and their joy all the more poignant.
 
 Just as an example of how much thought is put into not only its speculative technology but particularly the social and
 political and human factors affected by said technology, there's one episode fairly early on where an engineer from a
@@ -63,7 +55,7 @@ how situations like this impact individual people. This is a recurring theme wit
 Of course, I don’t think realism is a useful end goal in and of itself. Rather it’s just a springboard to use to use to
 advance the themes of the show, which deal directly with the real world and the degree to which the show is grounded in
 reality directly enhances how thought-provoking it is. This part is difficult to discuss without getting into spoilers;
-if you don't want to be spoiled on the show you can skip to section [[III.][III.]] below for some final thoughts.
+if you don't want to be spoiled on the show you can skip to section [[III.][III]] below for some final thoughts.
 
 .
 
@@ -143,8 +135,9 @@ synthesis of any pharmaceutical in commercial use). This is an incredibly ineffi
 should save coral reefs because they're really freaking awesome and it's good to have animals on this Earth because
 they're interesting and valuable in and of themselves rather than because of what they can do for us. Anyway. Rant over.
 
-Planetes thankfully avoids that pitfall pretty well, and justifies space exploration largely in terms of romanticism,
-which is what allows it to actually tackle whether this is hopelessly selfish or not.
+Planetes thankfully avoids that pitfall pretty well and sticks to focusing on tackling whether this is all hopelessly
+selfish or not. Space exploration in the show is driven by a small number of countries and in many cases even just a
+small handful of individuals, and this does come at a cost to others. It tackles both sides of this in compelling ways.
 
 #+BEGIN_EXPORT html
 <div class="imggroup">
