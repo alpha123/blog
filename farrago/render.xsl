@@ -22,6 +22,7 @@
 				</title>
 				<link rel="stylesheet" href="/blog/98.css" />
 				<link rel="stylesheet" href="/blog/blog.css" />
+				<link rel="shortcut icon" href="/blog/favicon.ico" />
 			</head>
 			<body>
 				<a href="#main" id="skipnav">Skip to main content</a>
