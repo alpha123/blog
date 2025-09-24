@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html" indent="yes" />
 	<xsl:variable name="baseUrl">
-		<xsl:text>https://alpha123.github.io/blog</xsl:text>
+		<xsl:text>https://alpha123.github.io</xsl:text>
 	</xsl:variable>
 	<xsl:template match="/">
 		<html>
@@ -20,17 +20,17 @@
 						</xsl:otherwise>
 					</xsl:choose> - pecan’s blog
 				</title>
-				<link rel="stylesheet" href="/98.css" />
-				<link rel="stylesheet" href="/blog.css" />
+				<link rel="stylesheet" href="/blog/98.css" />
+				<link rel="stylesheet" href="/blog/blog.css" />
 			</head>
 			<body>
 				<a href="#main" id="skipnav">Skip to main content</a>
 				<header id="banner">
-					<h1><a href="/farrago/index.xhtml">pecan’s blog</a></h1>
+					<h1><a href="/blog/farrago/index.xhtml">pecan’s blog</a></h1>
 				</header>
 				<xsl:apply-templates select="post" />
 				<xsl:apply-templates select="page" />
-				<button id="minimizedbar" onclick="restore()"><img src="/ie.png" /><span></span></button>
+				<button id="minimizedbar" onclick="restore()"><img src="/blog/ie.png" /><span></span></button>
 				<script><![CDATA[
 				function minimize() {
 					var win = document.querySelector('.window'), bar = document.getElementById('minimizedbar');
@@ -57,7 +57,7 @@
 	<xsl:template name="urlForPost">
 		<xsl:param name="slug" />
 		<xsl:param name="date" />
-		<xsl:value-of select="concat('/farrago/', translate($date, '-', '/'), '/', $slug, '.xhtml')" />
+		<xsl:value-of select="concat('/blog/farrago/', translate($date, '-', '/'), '/', $slug, '.xhtml')" />
 	</xsl:template>
 	<xsl:template name="browserchrome">
 		<xsl:param name="title" />
@@ -65,7 +65,7 @@
 		<xsl:param name="url" />
 		<header class="title-bar">
 			<div class="title-bar-text">
-				<img src="/ie.png" />
+				<img src="/blog/ie.png" />
 				<h1><xsl:value-of select="$title" /> - Microsoft Internet Explorer</h1>
 			</div>
 			<div class="title-bar-controls">
@@ -84,12 +84,12 @@
 		</div>
 		<nav class="toolbar buttonsbar">
 			<xsl:choose>
-				<xsl:when test="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
+				<xsl:when test="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
 					<a aria-label="Back">
 						<xsl:attribute name="href">
 							<xsl:call-template name="urlForPost">
-								<xsl:with-param name="slug" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
-								<xsl:with-param name="date" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
+								<xsl:with-param name="slug" select="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
 							</xsl:call-template>
 						</xsl:attribute>
 						<span>Back</span>
@@ -100,12 +100,12 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:choose>
-				<xsl:when test="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
+				<xsl:when test="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
 					<a aria-label="Forward">
 						<xsl:attribute name="href">
 							<xsl:call-template name="urlForPost">
-								<xsl:with-param name="slug" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
-								<xsl:with-param name="date" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
+								<xsl:with-param name="slug" select="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/blog/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
 							</xsl:call-template>
 						</xsl:attribute>
 						<span>Forward</span>
@@ -122,11 +122,11 @@
 				</xsl:attribute>
 				<span>Refresh</span>
 			</a>
-			<a href="/farrago/index.xhtml" aria-label="Home"><span>Home</span></a>
+			<a href="/blog/farrago/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
 			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Ffarrago" aria-label="Search">Search</a>
-			<a href="/farrago/favorites.xhtml" aria-label="Favorites">Favorites</a>
-			<a href="/farrago/archive.xhtml" aria-label="History">History</a>
+			<a href="/blog/farrago/favorites.xhtml" aria-label="Favorites">Favorites</a>
+			<a href="/blog/farrago/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
 			<a aria-label="Mail">
 				<xsl:attribute name="href">
@@ -138,7 +138,7 @@
 		</nav>
 		<div class="toolbar addressbar">
 			<label for="address">A<span class="hotunderline">d</span>dress</label>
-			<img src="/ie.png" />
+			<img src="/blog/ie.png" />
 			<input type="text" id="address">
 				<xsl:attribute name="value">
 					<xsl:value-of select="concat($baseUrl, $url)" />
@@ -198,7 +198,7 @@
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title" select="title" />
 				<xsl:with-param name="slug" select="@slug" />
-				<xsl:with-param name="url" select="concat('/farrago/', @slug, '.xhtml')" />
+				<xsl:with-param name="url" select="concat('/blog/farrago/', @slug, '.xhtml')" />
 			</xsl:call-template>
 			<main id="main">
 				<xsl:apply-templates select="content/node()">

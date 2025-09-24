@@ -103,26 +103,26 @@ h1 { font-size: 1em; margin: 0; }
 	top: 0;
 	width: 20px;
 }
-[aria-label="Back"]::before { background: url(../../../ui-icons-grayscale.png) 0 0; }
-[aria-label="Back"]:not([disabled]):hover::before { background: url(../../../ui-icons.png) 0 0; }
-[aria-label="Forward"]::before { background: url(../../../ui-icons-grayscale.png) -20px 0; }
-[aria-label="Forward"]:not([disabled]):hover::before { background: url(../../../ui-icons.png) -20px 0; }
-button[aria-label="Stop"]::before { background: url(../../../ui-icons-grayscale.png) -40px 0; }
-button[aria-label="Stop"]:hover::before { background: url(../../../ui-icons.png) -40px 0; }
-a[aria-label="Refresh"]::before { background: url(../../../ui-icons-grayscale.png) -60px 0; }
-a[aria-label="Refresh"]:hover::before { background: url(../../../ui-icons.png) -60px 0; }
-a[aria-label="Home"]::before { background: url(../../../ui-icons-grayscale.png) -80px 0; }
-a[aria-label="Home"]:hover::before { background: url(../../../ui-icons.png) -80px 0; }
-a[aria-label="Search"]::before { background: url(../../../ui-icons-grayscale.png) -100px 0; }
-a[aria-label="Search"]:hover::before { background: url(../../../ui-icons.png) -100px 0; }
-a[aria-label="Favorites"]::before { background: url(../../../ui-icons-grayscale.png) -120px 0; }
-a[aria-label="Favorites"]:hover::before { background: url(../../../ui-icons.png) -120px 0; }
-a[aria-label="History"]::before { background: url(../../../ui-icons-grayscale.png) -240px 0; }
-a[aria-label="History"]:hover::before { background: url(../../../ui-icons.png) -240px 0; }
-a[aria-label="Mail"]::before { background: url(../../../ui-icons-grayscale.png) -260px 0; }
-a[aria-label="Mail"]:hover::before { background: url(../../../ui-icons.png) -260px 0; }
-button[aria-label="Print"]::before { background: url(../../../ui-icons-grayscale.png) -700px 0; }
-button[aria-label="Print"]:hover::before { background: url(../../../ui-icons.png) -700px 0; }
+[aria-label="Back"]::before { background: url(ui-icons-grayscale.png) 0 0; }
+[aria-label="Back"]:not([disabled]):hover::before { background: url(ui-icons.png) 0 0; }
+[aria-label="Forward"]::before { background: url(ui-icons-grayscale.png) -20px 0; }
+[aria-label="Forward"]:not([disabled]):hover::before { background: url(ui-icons.png) -20px 0; }
+button[aria-label="Stop"]::before { background: url(ui-icons-grayscale.png) -40px 0; }
+button[aria-label="Stop"]:hover::before { background: url(ui-icons.png) -40px 0; }
+a[aria-label="Refresh"]::before { background: url(ui-icons-grayscale.png) -60px 0; }
+a[aria-label="Refresh"]:hover::before { background: url(ui-icons.png) -60px 0; }
+a[aria-label="Home"]::before { background: url(ui-icons-grayscale.png) -80px 0; }
+a[aria-label="Home"]:hover::before { background: url(ui-icons.png) -80px 0; }
+a[aria-label="Search"]::before { background: url(ui-icons-grayscale.png) -100px 0; }
+a[aria-label="Search"]:hover::before { background: url(ui-icons.png) -100px 0; }
+a[aria-label="Favorites"]::before { background: url(ui-icons-grayscale.png) -120px 0; }
+a[aria-label="Favorites"]:hover::before { background: url(ui-icons.png) -120px 0; }
+a[aria-label="History"]::before { background: url(ui-icons-grayscale.png) -240px 0; }
+a[aria-label="History"]:hover::before { background: url(ui-icons.png) -240px 0; }
+a[aria-label="Mail"]::before { background: url(ui-icons-grayscale.png) -260px 0; }
+a[aria-label="Mail"]:hover::before { background: url(ui-icons.png) -260px 0; }
+button[aria-label="Print"]::before { background: url(ui-icons-grayscale.png) -700px 0; }
+button[aria-label="Print"]:hover::before { background: url(ui-icons.png) -700px 0; }
 .addressbar { display: flex; }
 label[for="address"] { margin: 0 4px 0 8px; }
 .addressbar > img {
