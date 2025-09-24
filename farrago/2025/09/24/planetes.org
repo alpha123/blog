@@ -4,7 +4,7 @@
 #+BLOG_TAGS: review anime
 
 * I.
-/Planetes/ is a Greek word meaning ‘wanderer’; as one might expect it is also the source of the word ‘planet’—wandering
+/Planetes/ is a Greek word meaning ‘wanderer’; as one might expect it is the source of the word ‘planet’—wandering
 stars.
 
 The etymology of /planetes/ itself is somewhat obscure; most likely it derives from the Proto‑Indo‑European /*pleh₂/
@@ -14,13 +14,13 @@ Proto‑Germanic /*flōraz/ meaning floor or ground.
 Which is to say, Planetes is a very grounded anime.
 
 This is, of course, just a bit of etymological sleight of hand. But the point remains true: Planetes takes an inherently
-speculative premise and (ironically for a show about space) handles it in an extremely down-to-earth way. The technology
-is all very well-researched but even more than that the social and political factors and motivations for space
-development are all thoroughly explored and never once did I think poorly justified or unrealistic. It feels all the more
-prescient considering the show aired in 2003-2004, shortly after the beginning of the ISS era and well before the
-current age of private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are
-literally working on the things in the show and it’s not at all hard to imagine a corporation like Technora (the main
-corporation in Planetes) developing out of the current private space landscape.
+speculative premise about space and handles it in an extremely down-to-earth way. The technology is all very
+well-researched but even more than that the social and political factors and motivations for space development are all
+very well thought out and never once did I think poorly justified or unrealistic. It feels all the more prescient
+considering the show aired in 2003-2004, shortly after the beginning of the ISS era and well before the current age of
+private space companies such as SpaceX, Axiom Space, Varda Space Industries, etc, many of which are literally working on
+the things in the show and it’s not at all hard to imagine a corporation like Technora (the main corporation in
+Planetes) developing out of the current private space landscape.
 
 #+CAPTION: Commitment to realism: they’re still using IPv4 in 2076
 [[./img/ipv4.png]]
@@ -46,7 +46,7 @@ make something good, to the brain drain from all the smart people in his native 
 manufacturing operation itself taking place out of a run down warehouse manned by some really smart and dedicated people
 and their optimism that they really could make things better for themselves and their country. It kind of reminded me a
 bit of some article I read about a drone delivery company in Rwanda or something. Even heavily dysfunctional countries
-have some really capable people and I thought it was a very well-thought-out portrayal of that as well as of the general
+have some really capable people and I thought it was a very well considered portrayal of that as well as of the general
 gap between rich countries and poor countries irl too. A lot of the most capable people from poor countries end up
 immigrating to richer countries and have mixed feelings about it since they know this doesn’t really help their native
 country but it’s the best decision for them. Is this good? Is it bad? It doesn’t really take a side but just explores
@@ -197,22 +197,25 @@ love.
 [[./img/love.png]]
 
 I’m still not actually sure what I think of the scale expansion through the latter half of the show. We went from
-collecting junk with weirdos to the Jupiter mission and terrorists and it definitely got a lot less happy and sometimes
-kind of painful to watch. Stuff that starts off extremely good and comfy and then expands in scale dramatically always
-makes me feel pretty weird, but I can’t say I wasn’t extremely emotionally invested in it. It certainly makes you
-appreciate how much you were enjoying the smaller scale stuff and what you lost as the stakes get higher, but there’s
-also something really emotional about looking back like man how did we get here from back there. And by the end some of
-the scenes are so emotionally charged you look back and the weight of everything that has happened hits you like a
-truck.
+collecting space debris with weirdos to the Jupiter mission and terrorists and it definitely got a lot less happy and
+sometimes kind of painful to watch. Stuff that starts off extremely good and comfy and then expands in scale
+dramatically always makes me feel pretty weird, but I can’t say I wasn’t extremely emotionally invested in it. It
+certainly makes you appreciate how much you were enjoying the smaller scale stuff and what you lost as the stakes get
+higher, but there’s also something really emotional about looking back like man how did we get here from back there. And
+by the end some of the scenes are so emotionally charged you look back and the weight of everything that has happened
+hits you like a truck.
 
 #+CAPTION: I love the composition of this shot a lot
 [[./img/ai.png]]
 
 In the end I think Planetes does not really take a side on its internal politics. It does not display one side as
 clearly right and one side as clearly wrong. In many ways they’re both right, and they’re both wrong. What it is instead
-is a tour of humanity. It ennobles the development of space and it ennobles the just causes of people born into
-unfortunate circumstances who are just fighting for a chance. And now returning to the question posed at the beginning
-of this section—How selfish is it okay to be to achieve your dreams?—here’s what I think its answer is:
+is a tour of humanity. Through a window into the lives of a bunch of weirdos it seeks to paint a beautiful portrait of
+the human condition, and by showing this it unavoidably romanticizes humanity. It ennobles the development of space and
+it ennobles the just causes of people born into unfortunate circumstances who are just fighting for a chance.
+
+And now returning to the question posed at the beginning of this section—How selfish is it okay to be to achieve your
+dreams?—this is what I think its answer is:
 
 It’s okay to inconvenience others and even to hurt others. What’s not okay, however, is to pretend that you’re alone,
 and to pretend that your actions have no effect on other people. Every action you take ripples outward through our web
@@ -238,12 +241,12 @@ it doesn’t really feel fair to call it that. It’s like the old joke about ho
 a charage instead. Planetes is the charage of anime (?!)
 
 The way the characters are written is very reminiscent of other early 2000s otaku media to me. In some very abstract
-aesthetic way it kind of reminds me a little bit of Cross†Channel. There’s the particular style of banter, and the
-archetypes, but most of all there’s something sort of ineffable about works from that period. The atmosphere is so
-melancholic and simultaneously everyone has so much will to live, and there is a deep, deep focus on HUMAN CONNECTIONS
-that feels so genuine to me. It makes me so nostalgic for an era that I’m not even really sure if it ever really existed
-or not; certainly I never experienced it directly. Maybe the post-bubble era in Japan was just filled with the typical
-mundanities of everyday life, but there is for me at least a certain magic in works of fiction from that era and I think
+aesthetic way it reminds me a little bit of Cross†Channel (very vaguely). There’s the particular style of banter, and
+the archetypes, but most of all there’s something sort of ineffable about works from that period. The atmosphere is so
+melancholic and simultaneously everyone has so much will to live, and there is a deep focus on HUMAN CONNECTIONS that
+feels so genuine to me. It makes me so nostalgic for an era that I’m not even really sure if it ever really existed or
+not; certainly I never experienced it directly. Maybe the post-bubble era in Japan was just filled with the typical
+mundanities of everyday life, but for me at least there is a certain magic in works of fiction from that era and I think
 Planetes encapsulates it very well.
 
 All in all I think this is a show that will stay with me for a long time. I’m a huge fan of space media in general but
