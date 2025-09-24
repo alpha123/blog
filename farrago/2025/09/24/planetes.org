@@ -1,6 +1,6 @@
 #+TITLE: Anime review: Planetes
 #+AUTHOR: pecan
-#+DATE: 2025-09-10
+#+DATE: 2025-09-24
 #+BLOG_TAGS: review anime
 
 * I.
