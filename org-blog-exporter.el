@@ -38,7 +38,7 @@
 
 (defun blog-export ()
   (interactive)
-  (let ((basedir (file-name-concat default-directory ".." "..")))
+  (let ((basedir (file-name-concat default-directory ".." ".." "..")))
 	; dont know why this has to be global but `posts' table isnt found otherwise
 	(setq *temp/blog-db* (sqlite-open (expand-file-name "posts.sqlite3" basedir)))
 	(let ((org-html-doctype "xhtml5")
