@@ -163,6 +163,15 @@
 			</xsl:call-template>
 			<main id="main">
 				<article>
+					<header class="post-header">
+						<h1><xsl:value-of select="title" /></h1>
+						<time>
+							<xsl:attribute name="datetime">
+								<xsl:value-of select="$published" />
+							</xsl:attribute>
+							<xsl:value-of select="$published" />
+						</time>
+					</header>
 					<xsl:copy-of select="content/*" />
 				</article>
 			</main>

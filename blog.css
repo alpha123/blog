@@ -146,6 +146,7 @@ main {
 .maximized main { height: calc(100vh - 140px); }
 main h2 { font-size: 2rem; }
 main img { max-width: 800px; }
+.post-header h1 { font-size: 3rem; }
 .imggroup > p {
 	display: grid;
 	gap: 4px 4px;
