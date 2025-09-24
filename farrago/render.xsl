@@ -124,7 +124,7 @@
 			</a>
 			<a href="/farrago/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
-			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Fmedia" aria-label="Search">Search</a>
+			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Ffarrago" aria-label="Search">Search</a>
 			<a href="/farrago/favorites.xhtml" aria-label="Favorites">Favorites</a>
 			<a href="/farrago/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
