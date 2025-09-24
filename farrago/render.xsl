@@ -26,7 +26,7 @@
 			<body>
 				<a href="#main" id="skipnav">Skip to main content</a>
 				<header id="banner">
-					<h1><a href="/media/index.xhtml">pecan’s blog</a></h1>
+					<h1><a href="/farrago/index.xhtml">pecan’s blog</a></h1>
 				</header>
 				<xsl:apply-templates select="post" />
 				<xsl:apply-templates select="page" />
@@ -57,7 +57,7 @@
 	<xsl:template name="urlForPost">
 		<xsl:param name="slug" />
 		<xsl:param name="date" />
-		<xsl:value-of select="concat('/media/', substring-before($date,'-'), '/', substring-before(substring-after($date,'-'),'-'), '/', $slug, '.xhtml')" />
+		<xsl:value-of select="concat('/farrago/', substring-before($date,'-'), '/', substring-before(substring-after($date,'-'),'-'), '/', $slug, '.xhtml')" />
 	</xsl:template>
 	<xsl:template name="browserchrome">
 		<xsl:param name="title" />
@@ -84,12 +84,12 @@
 		</div>
 		<nav class="toolbar buttonsbar">
 			<xsl:choose>
-				<xsl:when test="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
+				<xsl:when test="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]">
 					<a aria-label="Back">
 						<xsl:attribute name="href">
 							<xsl:call-template name="urlForPost">
-								<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
-								<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
+								<xsl:with-param name="slug" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/following-sibling::posttitle[1]/@published" />
 							</xsl:call-template>
 						</xsl:attribute>
 						<span>Back</span>
@@ -100,12 +100,12 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:choose>
-				<xsl:when test="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
+				<xsl:when test="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]">
 					<a aria-label="Forward">
 						<xsl:attribute name="href">
 							<xsl:call-template name="urlForPost">
-								<xsl:with-param name="slug" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
-								<xsl:with-param name="date" select="document('/media/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
+								<xsl:with-param name="slug" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@slug" />
+								<xsl:with-param name="date" select="document('/farrago/posts.xml')//posttitle[@slug=$slug]/preceding-sibling::posttitle[1]/@published" />
 							</xsl:call-template>
 						</xsl:attribute>
 						<span>Forward</span>
@@ -122,11 +122,11 @@
 				</xsl:attribute>
 				<span>Refresh</span>
 			</a>
-			<a href="/media/index.xhtml" aria-label="Home"><span>Home</span></a>
+			<a href="/farrago/index.xhtml" aria-label="Home"><span>Home</span></a>
 			<div class="separator"></div>
 			<a href="https://www.google.com/search?q=site%3Aalpha123.github.io+inurl%3Ablog%2Fmedia" aria-label="Search">Search</a>
-			<a href="/media/favorites.xhtml" aria-label="Favorites">Favorites</a>
-			<a href="/media/archive.xhtml" aria-label="History">History</a>
+			<a href="/farrago/favorites.xhtml" aria-label="Favorites">Favorites</a>
+			<a href="/farrago/archive.xhtml" aria-label="History">History</a>
 			<div class="separator"></div>
 			<a aria-label="Mail">
 				<xsl:attribute name="href">
@@ -189,7 +189,7 @@
 			<xsl:call-template name="browserchrome">
 				<xsl:with-param name="title" select="title" />
 				<xsl:with-param name="slug" select="@slug" />
-				<xsl:with-param name="url" select="concat('/media/', @slug, '.xhtml')" />
+				<xsl:with-param name="url" select="concat('/farrago/', @slug, '.xhtml')" />
 			</xsl:call-template>
 			<main id="main">
 				<xsl:apply-templates select="content/node()">
