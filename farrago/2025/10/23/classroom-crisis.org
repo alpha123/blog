@@ -1,0 +1,140 @@
+#+TITLE: Anime review: Classroom☆Crisis
+#+AUTHOR: pecan
+#+DATE: 2025-10-23
+#+BLOG_TAGS: review anime
+
+* Ⅰ.
+I have a bunch of story ideas in my head. Sometimes I come up with new ones; usually they’re bad and I forget about them
+shortly after, but sometimes if they stick around for years I tend to think maybe they have potential. I have delusions
+of writing them eventually.
+
+Sometimes when I watch or read something by a pretty well-known writer where it’s clear that they most likely didn’t
+propose the project but were contracted by someone else I wonder what made them accept, what story idea they had that
+they thought this would be a good avenue to get out. My impression of the process is, you know, maybe Maruto has a bunch
+of ideas, different core concepts you can build a story around, floating around in his head for months or years and then
+some anime production committee contacts him with some basic outline and asks if he wants to take the project and maybe
+he thinks this would be a good outlet for some idea he has and accepts.
+
+My mindset for a lot of the first half or so of Classroom☆Crisis was wondering what idea Maruto had when he agreed to
+take this project. By the end I think it really delivers on this a lot. There actually is a really cool story concept
+here; I have no idea if my flight of fancy is true and it was something Maruto had been marinating for a while or if he
+just came up with it, but anyway I think there’s a really good concept here.
+
+Unfortunately it is pretty much only a concept.
+* Ⅱ.
+Because this isn’t really a popular or well-remembered show, as a refresher the C☆C plot is basically
+
+#+BEGIN_EXPORT html
+<details><summary>Expand spoilers</summary>
+#+END_EXPORT
+There’s a big aerospace company which was founded as a collaboration between two families. There’s some internal
+politicking over control of the company and one family has mostly seized control and displaced the other, but not fully.
+
+The MC, Nagisa, is just a body double for one of the main girls, Iris, who is the actual Nagisa and the heir to the
+waning family. The more powerful family wants her gone so they can take over completely, and MC has a vow to protect
+her. The real Nagisa’s parents die in an accident (implied to be an assassination) and the more powerful family tries to
+adopt her so they can keep her under their control, but the MC switches places with her and they get him instead. The
+real Nagisa is then exfiltrated to Earth but gets in an accident en route between Mars and Earth and is presumed dead,
+but she survived though it left her with complete amnesia about all of this and believes her name to be Iris.
+
+The MC meanwhile is raised (highly abusively) as part of the main family, but his older brother hates his guts and only
+assigns him jobs in the company that should be complete failures, but he keeps turning them around. The show starts when
+he gets assigned to the hybrid high-school-slash-experimental-rocket-engine-R&D division run by a brilliant
+engineer/teacher and his high school students including his younger sister Mizuki.
+
+Towards the latter parts of the show Iris starts to remember what happened after encountering the MC again. The drama,
+which is essentially only implicit, is that Iris falls in love with the MC for saving her but Mizuki (who is her best
+friend, and basically the thing she lives for while she has amnesia) already loves him.
+
+Mizuki has no backstory that connects her with the rest of the plot and I don’t think it’s ever mentioned how Iris met
+her in the first place or why she loves her so much, but she’s super cute so it works out somehow.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+That’s the undercurrent plot carrying the drama. The surface level plot is a bunch of politicking over the company
+(which is very valuable at this point), local elections, and a corrupt labour union.
+
+Oh, right, and the story ostensibly takes place on Mars, which is otherwise an entirely irrelevant detail. There’s
+essentially no mention of the terraforming that it would have taken to get Mars to the highly livable state it’s shown
+in. But hey, Mars is cool.
+
+Unfortunately, it really has no time for any of this, the drama is mostly carried by a few scenes in the last couple
+episodes, and a good portion of Iris’s characterization is presented via a slideshow in the ED (which is admittedly
+somehow really effective at developing her relationship with Mizuki). There is essentially nothing fleshing it out at
+all, the consequences of the drama are not elaborated on, and once it finishes setting up all the requisite backstory to
+get you invested in the love triangle it just sort of ends. In spite of being the driving force behind the story Iris
+appears so little that I realized while writing this I don’t actually have any screenshots of her, but take my word for
+it that she’s really cute.
+
+The strength is that the character writing is very good. In spite of the relatively little time allotted to most of the
+characters they’re all pretty endearing and I at least got fairly invested in their little school/child labour rocket
+sweatshop. Besides the MC, Iris, Mizuki, and Kaito (the teacher) none of them really do anything of note though, they’re
+just kind of there building rockets. But their discussions with each other, about rockets and just random banter, are
+really nice and they’re characterized very efficiently. I don’t really know how else to describe it besides endearing.
+
+Also, personally I just really like rockets and media that involves building rockets so that helps a lot.
+
+[[./img/aerospace-engineering.png]]
+
+Disappointingly it doesn’t go into much (really any) detail about engineering, and these aren’t really real rockets
+they’re super efficient fantasy rockets. Please do not get the impression this is even remotely hard sci-fi. But hey,
+it’s the thought that counts? Look, it’s enough to have scenes like this:
+
+[[./img/mizuki-wrench.png]]
+
+The one character it does actually devote a good amount of time to is Mizuki, and I think this was a good choice given
+the limited runtime. Simply put, she’s just really cute and you can’t help but love her. Getting you emotionally
+invested in her is a good choice to make the drama later on sort of hit in spite of how little it is actually
+explicated. Mizuki and her relationship with Iris are fleshed out well enough that you can kind of imagine how a better
+and longer show would go. But that’s kind of what I mean by saying the show is really only a concept; it /isn’t/ the
+show you want it to be but it hints at it enough that you can imagine how the better show would go. This mostly just
+left me kind of irritated at the unfulfilled potential. I think a much longer show with the same concept and character
+dynamics could be really good, but the show we got is just a prototype.
+
+#+BEGIN_EXPORT html
+<figure class="imggroup">
+#+END_EXPORT
+[[./img/mizuki1.png]]
+[[./img/mizuki2.png]]
+#+BEGIN_EXPORT html
+<figcaption>Is she not really cute though</figcaption>
+</figure>
+#+END_EXPORT
+
+The rest of the show is pretty unremarkable. The politics and intrigue were honestly pretty OK? I think most of it was
+conceptually not a super interesting thing to focus on but it was executed well. I’m not even sure why the runtime felt
+so short, exactly, since I don’t think it overly focused on any one aspect, I think it was just a far too ambitious show
+for 13 episodes. The way the twists and revelations are presented at the end is fairly cool at least.
+
+The MC was also fairly weak, IMO, at least compared to the girls anyway. He’s presented as this very stoic guy at the
+beginning and is actively antagonistic to the teacher and other students (as he is somewhat forced to be due to his
+orders from above) but then never really opens up much with the exception of one scene with Mizuki. At risk of sounding
+like a character development addict I think he could’ve been a cool guy if he got a bit more development. It kind of
+felt like it was setting up for that, to move him from kind of an annoying asshole at the beginning to a sympathetic
+character later on with deep ties to the heroines, but that never really happened. To be clear, you do move from
+disliking him to feeling kind of bad for him, but this is more due to revelations that other characters were just kind
+of evil rather than to any actions from the MC. In spite of being presented as this giga successful scheming business
+figure he’s honestly pretty passive in the character relationships. His secretary was pretty good though.
+
+#+CAPTION I want an emotional support OL
+[[./img/hanako.png]]
+
+Overall I think the plot could’ve made for a cool revenge story if it were longer. It kind of reminded me of Hello Lady
+in some ways, like I think the MC even said なすべきことをなす or something. Unfortunately not every MC can be Narita
+Sinri. This show particularly would have benefitted a lot from a Narita Sinri MC; I think that’s kind of the type it was
+going for and didn’t succeed at.
+* Ⅲ.
+Classroom☆Crisis is a prototype of a great show, but it’s not really a great show. Some of the episodes barely flow into
+each other and you often just kind of have to trust that the characters have good motivations for the things they do and
+it’s just not shown. Once it finally presents its core idea it really is a great idea for a story, but then it just kind
+of ends. Making it twice as long might help, but I’m not even sure it wants to be in the anime medium; I think it would
+make a cooler eroge than an anime.
+
+That said, I think it’s a pretty interesting thing to watch and I don’t want it to languish in obscurity. For all its
+faults I do feel some connection to what it was trying to do, and it left me hungry for a better version of itself.
+
+Classroom☆Crisis is less of a story and more of an idea for a story, but it’s a damn good idea.
+* Ⅳ.
+#+CAPTION: Is it just me or does she look kind of like a centaur here?
+[[./img/centaur.png]]
