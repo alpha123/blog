@@ -34,7 +34,7 @@ Unfortunately it is pretty much only a concept.
 Because this isn’t really a popular or super well-remembered show, as a refresher the C☆C plot is basically as follows:
 
 #+BEGIN_EXPORT html
-<details><summary>Expand spoilers</summary>
+<details class="status-field-border"><summary>Expand spoilers</summary>
 #+END_EXPORT
 There’s a big aerospace company which was founded as a collaboration between two families. There’s some internal
 politicking over control of the company and one family has mostly seized control and displaced the other, but not fully.
