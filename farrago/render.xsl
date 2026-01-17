@@ -261,4 +261,12 @@
 			<xsl:value-of select="text()" />
 		</a>
 	</xsl:template>
+	<xsl:template match="img[starts-with(@src, './img/')]">
+		<a>
+			<xsl:attribute name="href">
+				<xsl:value-of select="@src" />
+			</xsl:attribute>
+			<xsl:copy-of select="." />
+		</a>
+	</xsl:template>
 </xsl:stylesheet>
