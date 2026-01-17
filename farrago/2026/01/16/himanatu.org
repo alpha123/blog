@@ -1,0 +1,412 @@
+#+TITLE: Eroge review: Himawari no Kyoukai to Nagai Natuyasumi
+#+AUTHOR: pecan
+#+DATE: 2026-01-16
+#+BLOG_TAGS: review eroge
+
+/変わってゆくものがある。/
+
+/変わらないものがある。/
+
+If I were to summarize Himanatu it would probably be with these two lines that flash briefly in the opening movie. I
+think this captures the core of the work well and even if it seems simple and trite I think good fiction has a way of
+making the trite feel profound.
+
+[[https://vndb.org/v10557][Himawari no Kyoukai to Nagai Natuyasumi]] is (primarily) a collaboration between two of my favorite writers, SCA-DI and
+Konno Asta. If I remember correctly the backstory is that SCA-DI read Konno’s first game, [[https://vndb.org/v1898][Natu no Ame]], and sought him
+out for a collaboration (I don’t remember where I read this so take it with a grain of salt). As a huge fan of both
+SCA-DI and Konno’s other work I had to check this game out eventually but I was still surprised by how much I liked it.
+I think this game is an extremely overlooked entry in Makura’s catalogue.
+
+I only read the main routes by SCA-DI and Konno; the side writer routes don’t really interest me too much but one of the
+side heroines is pretty cute. I’m a little interested in the additional route that came with the PS3 release; Hina’s
+route made it so that depending on where that branches off it could be pretty interesting and I might check it out
+eventually. I assume it’s one of the side writers though.
+
+The game is very heavily themed around sunflowers. This is more justification for my theory that sunflower media can’t
+possibly be bad, plus [[blog:asteraceae][sunflowers are my favorite plant]].
+* Common route
+Seemingly contrary to most other reviews I’ve seen of this game, I liked the common route quite a bit. I think it’s
+pretty effective at establishing its atmosphere (the music and art certainly help with this), it’s surprisingly funny,
+the girls are cute and characterized pretty well, and it has a few really nice lines that set the tone thematically for
+what the game is about. If anything the weakness is the last part, as I think the rest of the game was not very focused
+on what I thought the common route was setting up for.
+
+#+BEGIN_EXPORT html
+<figure class="imggroup">
+#+END_EXPORT
+[[./img/BGI_2025-12-07_09-02-15.png]]
+[[./img/BGI_2025-12-07_06-41-30.png]]
+#+BEGIN_EXPORT html
+<figcaption>I think it builds a really nice atmosphere around Obosiro.</figcaption>
+</figure>
+#+END_EXPORT
+
+The common route is simple enough; the main character (Asitaba Yousuke) returns to the village he grew up in after
+having moved away 8 years ago, reunites with his childhood friends, and together they work on restoring the 秘密基地
+they used to use. This could have been a pretty nice group of friends/club activities/DIY story, and to a certain extent
+it was, but I think it was a bit too short and unfocused to really get the ball moving in that regard. This is perhaps
+my biggest gripe with the game; if the common route were maybe 50% longer I think I could have gotten really into it.
+Still, what was there was pretty good.
+
+There is quite a lot unexplained regarding the circumstances surrounding Yousuke, why he came to the village originally,
+and why he left and then came back. Also, one of the heroines is pretty mysterious and a lot of the scenes with her feel
+a bit surreal and magical. I thought it did a pretty good job of keeping the mysterious tension in place while not
+actually being a mystery game; it provided enough to keep you interested and to establish an element of magical realism
+in the setting.
+
+I’m pretty sure SCA-DI wrote, while not the entire common route, significant portions of the common route himself. Some
+parts felt a little like a proto-Sakura no Uta to me at times; especially there were a a few scattered conversations and
+narration that reminded me a lot of the end of Sakuuta chapter 2. I personally really like the way Sakuuta handles
+change and the passage of time and the ephemeral nature of all worldly phenomena so this set my hopes for the rest of
+the game pretty high. Some scenes like when Yousuke and Yomi were talking about 懐かしい would not have felt out of
+place as a conversation between Naoya and Rin in the early parts of Sakuuta.
+
+#+BEGIN_QUOTE
+「難しいな。変わってないようで、すべてがゆっくりと変わっている……こんな感覚をどう言えばいいのか……」
+
+「なつかしい……」
+
+「懐かしい……？」
+
+「うん……わたしは、そういう単純な言葉でいいんだと思う」
+#+END_QUOTE
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>There are some other quotes later on that made me think similar things, e.g. near the end of Yomi’s route:</summary>
+#+END_EXPORT
+#+BEGIN_QUOTE
+「そうだよ。ここは、私達、朧白聖歌隊の秘密基地なんだから、最後の最後まで、楽しく過ごすんだよ。終わりなんて考えないで……終わりの日の事なんて考えないで……」
+
+「そうだね……」
+
+たしかに時間の問題ではない。
+
+どんなに残りの時間が短く感じられたとしても、俺たちはその最後の瞬間まで、この教会の朧白聖歌隊だ。
+#+END_QUOTE
+
+Or the entire scene at the end of the common route:
+
+#+BEGIN_EXPORT html
+<figure class="imggroup">
+#+END_EXPORT
+[[./img/BGI_2025-12-13_05-50-03.png]]
+[[./img/BGI_2025-12-13_05-50-29.png]]
+#+BEGIN_EXPORT html
+</figure>
+</details>
+#+END_EXPORT
+
+The SCA-DI contribution also showed through in the humor, and while I’m not typically a huge fan of SCA-DI humor I
+thought it was actually pretty funny at times, like the better parts of Sakuuta chapter 1 without the parts that annoyed
+me so much.
+* Yomi route
+This to me is the real emotional payload of the game. I was blown away at how good it is. In my opinion Yomi’s route
+stands as one of the best things SCA-DI has ever written, on par with some of the best parts of Sakura no Uta/Sakura no
+Toki/Subarasiki Hibi/Tui no Sora Remake for me. I definitely did not expect this to deliver the feels it did.
+
+The only thing that was not completely satisfying is that I felt like it kind of abandoned the passage of time themes
+that the common route was hinting at. The epilogue did an alright job of circling back to this but it was shown more in
+platitudes than in the actual events of the story.
+
+As kind of a personal soft spot I really like how it focused on the power and versatility of words and human language.
+The way this was done was really cute and in my opinion responsible for some of the most beautiful lines in the story.
+When SCA-DI enters the zone he can really put out some truly beautiful usage of the Japanese language and he really
+delivered on that here.
+
+The overall structure of (the main part of anyway, see below) this route is really clever. It’s really tightly paced and
+does an excellent job of setting up the background information necessary for its reveals in a way that feels really
+natural. Honestly it’s just extremely well plotted. Between this route and Yasuko’s route in Tui no Sora Remake I think
+SCA-DI is an extremely talented writer of short stories and I would like to see him pursue this kind of thing more in
+the future.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Big spoilers</summary>
+#+END_EXPORT
+The type of recontextualization this route does can be an extremely powerful tool. After the reveals I was crying so
+much just thinking about how she only ate fish and how he tried to catch fish for her when they were on the island… he
+just wanted to catch fish for his cat man… fuck.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+I also think the usage of folklore in this route is really nice. The way it’s presented is pretty cool; the blend of
+actual Japanese folklore and the parts invented for the story reminded me of Syumon Yuu’s works a bit. The way the
+folklore unfolds as they dig deeper into the mystery is really engaging and keeps you reading. I really enjoyed the
+particular brand of magical realism in this game and how it was kind of grounded in the folklore.
+
+#+CAPTION: Even the way the sunflowers are drawn in this route just feels kind of magical. Incidentally, this route has SO many really nice CGs.
+[[./img/BGI_2025-12-18_12-00-24.png]]
+
+No discussion of the Himanatu routes can be complete without commenting on the really bizarre structure. There are no H
+scenes in the main part of the routes, rather, it’s all packed into the post-credits section, and the post-credits is
+like ⅓ of the total length of Yomi’s route. Given how epic the actual pre-credits conclusion of Yomi’s route is, this
+really took some wind out of the sails. The H scenes weren’t bad, but they weren’t really good either and I think they
+would have benefited from not being all back to back since it did become a bit of a slog to read through. The other
+parts of the post-credits epilogue were fine; some were nice enough but felt a bit extraneous and then as mentioned the
+rest served to connect back to the common route passage of time theme a bit.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Big spoilers</summary>
+#+END_EXPORT
+I’m particularly referring to the parts with original Yomi’s mother. I can see why this exists and it was something that
+I did wonder about, but I don’t think it needed to be addressed explicitly. It almost felt a little TOO conclusive in a
+way and I don’t really think the story would have been harmed by leaving it to the imagination. It also got brought up
+and then resolved really quickly. If the rest of the post-credits section had also been about original Yomi’s family I
+could see it working a bit better, but you have the epic climax into credits roll, then H scene spam mixed with light
+slice of life, then another ending fake out, then the sudden pivot into how Yomi will literally evaporate if she doesn’t
+meet the original Yomi’s family to solidify their connections, then the quick resolution and then the actual end. It was
+fine, but it was also just kind of weird. Between all this there were some fairly nice feelsgood lines at least.
+
+In some sense though this does serve a meta-purpose in giving the reader some time to cool down after how high the
+emotions were running during the main part of Yomi’s route. I actually like that and it makes it easier to transition to
+the next route, but I think the way this was done was maybe a bit too jarring and it lost some of the kami momentum it
+had built up.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+* Hina route
+This is the part by Konno Asta. Hina’s route is probably one of the weirder/more unique/more ambitious pure romance
+stories I’ve read in an eroge, both due to the nature of the relationship that it tackles and the way it gets there. I
+think it showcases both Konno’s strengths and weaknesses as a writer pretty well.
+
+Konno has a certain way of grabbing you by the balls with drama and not letting go. Things are happening, emotions are
+running high, and you’re along for the ride. In my opinion there aren’t too many writers who can match his
+moment-to-moment execution of scenes and ability to get you emotionally invested in pretty much anything. I spent the
+last 2 days I was reading this game doing pretty much nothing except reading all day because at that point I really just
+couldn’t stop. Konno can completely sell you on the cheesiest scenes and make you really believe in them.
+
+On the other hand the actual planning was sometimes kind of strange. It doesn’t feel extremely tight, and some events do
+kind of feel like asspulls just to keep the drama going, but when you’re in the moment you just kinda BELIEVE and roll
+with it. In the end it really does come together. There were a lot of times I was questioning the characters’
+motivations only to eventually be satisfied later on. I kept wondering how it was actually going to wrap everything up
+and yet somehow by the end everything does feel resolved (mostly). Even if the drama occasionally feels a bit contrived
+or comes off a bit thick the resolutions never fail to leave you with a big smile on your face. Towards the end there’s
+a real sense of like, this is what we’ve been building up to all this time and it’s finally all paying off, and some
+scenes are kind of magical in how much it pulls you into them.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Spoilers</summary>
+#+END_EXPORT
+Specifically I think the entire plotline with Hina’s mother and Kuroi was kind of more complex than it needed to be.
+There’s enough going on in the route just with the relationship between Hina and Yousuke and I feel like it kinda
+overcooked with the corporate intrigue plotline. It’s one of those things where I think emotionally it benefits from
+drawing out the resolution to Hina’s backstory, but the actual process of drawing it out makes the plot a bit overly
+circuitous. It’s executed well enough that it works, but in my opinion the actual plot is kind of weird.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+Even though the route is already quite long (I think Hina’s route is about as long as the common route + Yomi route
+combined) I felt like it should have either been a bit longer or a bit shorter. If it was longer maybe it could have
+tackled some arcs in a bit more depth; if it was shorter maybe those parts would just have been cut in the first place.
+It definitely covers a /lot/ of ground, which I think is mostly a good thing because it makes it a more compelling
+romance story. And this is definitely what I would consider to be a good /romance/ story, with both parties taking the
+time to figure out what it is they feel, the back and forth, etc. It’s definitely a cut above the romance in most eroge
+routes, which I think can often feel fairly unmotivated. Hina’s route certainly does not skimp on both /why/ they ended
+up falling for each other and the circuitous process they took for it to be fully realized.
+
+Tonally I think Hina’s route feels pretty different from the common route + Yomi’s route (which keep a pretty consistent
+tone) and it results in something that doesn’t quite feel fully cohesive to me. It’s easy to not really notice this in
+the moment but when you’re thinking back to Yomi’s route it feels like a pretty different game entirely. Honestly this
+almost works as a sort of meta aspect—the tone shift is a marking of the passage of time that the game is going for. But
+in the end the routes just feel very different, for better or worse.
+
+The MC also feels really different between the routes. This isn’t really helped by the fact that different routes have
+different artists and they drew the MC’s face pretty differently in CGs, so he looks kind of different too. I’m not
+exactly sure how to say this but he feels kind of… dumber… in Hina’s route. In Yomi’s route he’s mostly pretty
+thoughtful, almost a bit timid, and generally feels like he seeks understanding and thinks before he acts. He’s not
+completely generic but doesn’t feel too remarkable either. In Hina’s route he is definitely more fiery and headstrong
+and comes off as having a much stronger personality in general. Like, he feels like much more of a character, but also
+part of that is that you get kind of exasperated at him sometimes, or at least I did. I expect he is probably a bit more
+polarizing than anything in Yomi’s route and I could see him kind of annoying some people but I feel like getting a
+little bit mad at the MC from time to time can kind of get you more engaged in the story, in a way. I consider this more
+of a pro than a con but the difference in the portrayal of the MC is another thing that makes the routes feel pretty
+different from each other.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Spoilers</summary>
+#+END_EXPORT
+For example I thought Yousuke getting in a fistfight with Kuroi for no reason was pretty bizarre. That single thing
+changed my impression of the MC a lot after Yomi’s route, since Yomi route MC would never have done that. I was a little
+mad at the MC for that when it happened, and for his entire handling of the whole encounter with Hina’s mother the first
+time around. In the end though I liked the way this worked out because it felt like the portrayal of Yousuke was much
+more developed psychologically than it was in Yomi’s route, which is true of basically all the characters.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+I think there’s also an interesting contrast between how SCA-DI and Konno write heroines. Konno writes these really
+realistic, psychologically complex and really cute heroines and SCA-DI writes these kind of magical, almost ethereal
+feeling heroines. Yomi is like, definitely a SCA-DI girl, if you’ve read any prior SCA-DI works it’s immediately obvious
+from the very start of the game. One of the most SCA-DI coded heroines of all time.
+
+Hina is a pretty realistic (albeit very understanding and kind) adolescent girl. There are many scenes from her
+perspective and her internal thought process is pretty well developed. It’s messy and complex and sometimes
+contradictory; she has insecurities that are at once both irrational and kind of realistic.
+
+In contrast Yomi’s motivations are very simple and pure. Even more than saying /she/ is idealistic I would say /the
+concept of her existence/ is idealistic, whereas Hina is a much more grounded attempt to portray a realistic girl. As a
+consequence of this I think Hina is really cute and lovable and her route is a good romance story whereas Yomi serves to
+make the concept of her route possible and lets it deliver something really epic. They both serve the purposes of their
+routes really well. I don’t think one style of writing heroines is any better than the other; Hina is certainly the
+cuter girl that will have you kyaaaing at the screen more but Yomi will stick with me for a long, long time. It just got
+me thinking about different styles of writing heroines since I think SCA-DI and Konno are definitely on opposite ends of
+some kind of spectrum here.
+
+I like the usage of Hina’s perspective a lot and the scenes where she’s just talking to Itiko or to Tukiko flesh out her
+character a lot in my opinion. Her narration goes a long way toward helping you understand how her thought process works
+and it makes some of the later scenes hit pretty hard. Itiko is also pretty funny.
+
+Hina’s route does the same thing as Yomi’s route with all the H scenes stuffed into the post-credits; it doesn’t feel
+quite as egregious or disruptive here but it’s still a bit of a slog to get through. I think the Hina epilogue is really
+nice though, a fitting end to the game and it finally comes back to deliver on some of the thematic direction hinted at
+by the common route.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Big spoilers</summary>
+#+END_EXPORT
+The major thing about this route that does bother me is how Yomi was handled, i.e. basically written out of the game.
+After Yomi’s route I was wondering what they could possibly do with her in Hina’s route given how hard it would be to
+follow up Yomi’s route but I still didn’t really expect them to just kind of give up. To be fair, the scene where Yomi
+turns back into a cat was pretty moving even if it felt like it kind of came out of nowhere, but also removing her human
+form from their memories was a bit much and felt like a blatant attempt to just kind of dodge the problem entirely and
+not have to deal with it. It’s also really sad, too, and I guess the sporadic discussions later in the route between
+Yousuke and Ruka where they /almost/ remember Yomi are an attempt to ease the pain by reminding the reader that she’s
+not entirely forgotten, but mostly it just kind of baited me into thinking there might be more of a real resolution to
+that, which didn’t happen. This is the one thing I would say is just not really resolved adequately at all. I think most
+people who read this game will probably think the same thing, since frankly it does just feel kind of half-assed, but in
+a way they kind of wrote themselves into a corner with how epic Yomi’s route was and then having to follow it up with
+another one that’s not about that.
+
+Ultimately it’s just another example of the routes wanting to do pretty different things, but since Yomi’s route
+recontextualizes the common route it forces Hina’s route to do something about her. I think it could have done better,
+but I’m not exactly mad about it due to how well Yomi was handled in her own route. Yomi’s route was so final to her
+story that I kind of don’t mind that much that they didn’t even really try for Hina’s route.
+
+You can of course just headcanon it as Yomi deciding to become the 寝子麗, which I guess is what happened, but that
+entails the original Yomi losing her bet with Nana, which is… kind of awkward a thing to have happen in the true route I
+feel.
+
+It does make all the scenes with her watching over them as a cat very bittersweet.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Spoilers</summary>
+#+END_EXPORT
+In spite of selling me pretty well on the romance between the two leads, the exact nature of their relationship is still
+kind of weird to me. There’s a certain amount of papering over the fact that she’s still literally in high school and
+they’re getting married (but fake but real). I think this could have been addressed more since the speed of it at the
+end does take me out of the otherwise realistic feel of the route a little bit. I think this is something that has
+gotten better as time passes after finishing and as I think about it though; I think the pivot from viewing her as more
+of a daughter to more of a wife was pretty smooth. It is at least a pretty weird relationship but it works surprisingly
+well somehow.
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+* Conclusion/miscellany
+I can’t believe I’ve gotten this far without mentioning the music. I think this game probably has the best OST of any
+eroge I’ve played or at least it’s up there. Szak is obviously one of the best composers in the industry and I think
+this stands among his finest work. There’s good synergy between the music and the text and I think it really makes a lot
+of scenes even more powerful.
+
+In spite of having a bunch of different artists I think the art + music + text + voice acting all comes together to form
+a pretty cohesive atmosphere. It’s very strong as a Gesamtkunstwerk and the unifying motif of sunflowers helps out a
+lot.
+
+The art itself is kind of hit or miss though. I think the BGs are all very nice but the tatie and CGs span the full
+range from top tier to not so great. Hina has by far the best tatie in the game, as expected since Moto4 is my favorite
+Makura artist. The CGs are pretty good by and large; sometimes a bit janky but the visual direction is always strong. As
+with other Makura games you won’t find many CGs that are just tilted zoomed in close ups of a heroine’s upper body. I
+think a lot of the CG composition is extremely good. Oh yeah, and it has back sprites, always the mark of a kamige. And
+naked sprites. And even naked back sprites.
+
+#+CAPTION: Is this not the mark of a kamige?
+[[./img/BGI_2025-12-07_08-49-10.png]]
+
+#+CAPTION: Art direction pog!!
+[[./img/BGI_2025-12-12_05-48-37.png]]
+
+Ruka is very moe. I love Kawasima Rino’s voice acting very much. I think she really nails it on this character.
+
+Wrapping this all back up, I think one of the most interesting things about the game to me, having been given some time
+to think about it, is the way it ultimately handles 変わってゆくもの / 変わらないもの. This is a bit difficult to
+discuss without spoilers.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Spoilers</summary>
+#+END_EXPORT
+Originally I thought I would have preferred if they did lose the church and the second part of Hina’s route took place
+somewhere else (either still in Obosiro or elsewhere). This would be sad, but it could have used this to show how
+Yousuke and Hina can forge ahead in spite of losing an important place filled with memories. As it is, they didn’t
+really lose anything. Yes, the bell was removed. Yes, people moved away and they don’t talk as much anymore. But the
+bell was brought back when it counted and rather than gradually drifting apart from Ruka and Dia they’re still pretty
+close and they can always come back like family.
+
+And I think maybe this actually is the point of the game. In addition to ephemeral things there are also some things
+that don’t change and some relationships that always stay around. I think this conveniently integrates the family themes
+of Hina’s route with the passage of time focus of the common route and epilogues.
+
+Simply put, after the common route I was expecting the message about the passage of time to be something like “It’s okay
+to go into the future, in spite of the ephemeral things you will inevitably lose, because there are new things too.” But
+it was actually something more like “Don’t be afraid of the future, because there are some things that you won’t leave
+behind, some things that will always be there or will always come back. The sunflowers only bloom for a few months each
+year, but they come back year after year.”
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+This is something I had to think about a little bit to really get and I think my interpretation is still evolving. But
+the angle it took is growing on me quite a bit, and I think this was the one coherent aspect throughout a work that
+otherwise goes in several very different directions.
+
+Very early on in the game after Yousuke returns to the village he comments on the fact that the church bell tower that
+seemed so big to him as a kid is actually pretty small now as an adult.
+
+#+BEGIN_QUOTE
+The priest: 「時が経つとはそういうことだ。」
+
+Yousuke: 「永遠のものはないってことですか」
+#+END_QUOTE
+
+(Compare Sakuuta chapter 2 『永遠なんてものは無い。』)
+
+Indeed, obviously there isn’t anything truly eternal. But don’t let that make you overlook the things that are close,
+the things that are cyclic, the things that operate on their own schedule entirely unconcerned with your life. This is,
+in my opinion, what the himawari stood for the whole time, and what Obosiro as a whole stands for. There’s that passage
+from the opening that repeats again throughout the game:
+
+#+BEGIN_QUOTE
+地に咲く太陽の季節は、わずか６０日あまり。
+
+１年を２４時間に置き換えるなら、向日葵の太陽が姿を見せられるのは、ほんの４時間程度ということになる。
+#+END_QUOTE
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>The end of Hina’s route adds to it:</summary>
+#+END_EXPORT
+#+BEGIN_QUOTE
+けれど――季節は廻り、夏はまた還ってくる。
+
+この土地の生命が枯れない限り、何度でも向日葵は咲き誇る。 
+#+END_QUOTE
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
+
+Sunflowers are annual plants that die every year, but they can grow again. There is always the 希望 that they will be
+back next year, even after your 長い夏休み ends.
+
+I can see myself thinking about this game for a long time to come. I think I read it at a good time in my life for the
+message it has and I got super absorbed into it. Both of the routes are really pretty unique among eroge that I’ve read
+and they’re very memorable. Great game.
+
+#+BEGIN_EXPORT html
+<details class="spoiler status-field-border"><summary>Fin.</summary>
+#+END_EXPORT
+[[./img/BGI_2025-12-31_13-30-36.png]]
+[[./img/BGI_2025-12-31_13-34-15.png]]
+#+BEGIN_EXPORT html
+</details>
+#+END_EXPORT
