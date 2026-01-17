@@ -173,7 +173,9 @@
 							<xsl:value-of select="$published" />
 						</time>
 					</header>
-					<xsl:copy-of select="content/*" />
+					<xsl:apply-templates select="content/node()">
+						<xsl:with-param name="posts" select="'/blog/farrago/posts.xml'" />
+					</xsl:apply-templates>
 				</article>
 			</main>
 			<footer class="status-bar">
@@ -244,5 +246,19 @@
 				<xsl:value-of select="@published" /> – <xsl:value-of select="text()" />
 			</a>
 		</li>
+	</xsl:template>
+	<xsl:template match="postlink">
+		<xsl:param name="posts" />
+		<xsl:variable name="slug" select="@slug" />
+		<a>
+			<xsl:attribute name="href">
+				<xsl:variable name="published" select="document($posts)//posttitle[@slug=$slug]/@published" />
+				<xsl:call-template name="urlForPost">
+					<xsl:with-param name="slug" select="$slug" />
+					<xsl:with-param name="date" select="$published" />
+				</xsl:call-template>
+			</xsl:attribute>
+			<xsl:value-of select="text()" />
+		</a>
 	</xsl:template>
 </xsl:stylesheet>

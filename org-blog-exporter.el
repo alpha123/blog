@@ -1,6 +1,18 @@
 (require 'ox)
 (require 'ox-html)
 
+(org-link-set-parameters "blog" :follow #'blog-link-open :export #'blog-link-export :store #'blog-link-store)
+
+(defun blog-link-open (path _)
+  (error "not yet implemented"))
+
+(defun blog-link-store (&optional interactive?)
+  (error "not yet implemented"))
+
+(defun blog-link-export (link description format _)
+  (let ((desc (or description link)))
+	(format "<postlink slug=\"%s\">%s</postlink>" link desc)))
+
 (defvar *my/ob-last-exported-title* nil)
 (defvar *my/ob-last-exported-date* nil)
 (defvar *my/ob-last-exported-tags* nil)
