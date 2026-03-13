@@ -1,0 +1,50 @@
+#+TITLE: Plant review: The family Asteraceae
+#+AUTHOR: pecan
+#+DATE: TBD
+#+BLOG_TAGS: faux-review plants
+
+* highest number of members
+** all habitats, every continent except antarctica
+** extremely widespread
+* familiar species
+- sunflowers
+- dandelions
+- goldenrods
+- lettuce
+- chicory
+- artichoke
+- jerusalem artichoke
+- herbs like tarragon, chamomile, and absinthe
+- wide variety of ornamentals: aster, daisy, cosmos, dahlia, chrysanthemum, zinnia, marigolds (refers to a variety of disparate Asteraceae species)
+* evolutionarily relatively ‘new’ family
+** antarctica/gondwana
+** oldest fossil pollen found in antarctica
+** centers of diversity in south america and africa
+* defining characteristic: composite flowers
+* advantages
+** what makes plants successful is different from what makes animals successful
+- plants make their own food, and thus are not as highly limited by energy. not getting leaves eaten = more energy.
+*** everything plants do is either to attract insects or to repel insects
+** compound flowers
+*** because "petals" (required to attract pollinators) are shared among many individual tiny flowers, the energy investment required to make each individual flower is small
+the energy required to make petals is amortized across many individual flowers, and the energy required to make each flower is small
+- enables redundancy
+*** even if the composite flower is severely damaged there will still be individual flowers that are intact and fully functional
+*** if a pollinator lands it will likely pollinate more than one individual flower
+** inulin/fructans
+stabilize cell membranes under drought/freezing conditions https://pmc.ncbi.nlm.nih.gov/articles/PMC2705711/
+- parallel with poaceae
+** high diversity of secondary metabolites
+*** highest diversity of compounds in the asteroideae subfamily, which accounts for 70% of the family
+https://www.sciencedirect.com/science/article/abs/pii/S105579031600083X
+*** often toxic and bitter to insects and herbivores
+https://en.wikipedia.org/wiki/Sesquiterpene_lactone
+*** many plants allelopathic
+*** gold standard antimalarial drug (artemisinin) from asteraceae
+* often some of the first plants to colonize disturbed soil
+- extremely weedy
+- reproduce fast and aggressively
+- dandelions in particular are some of the relatively few plants to reproduce primarily asexually
+
+* I.
+
