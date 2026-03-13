@@ -387,6 +387,7 @@ To get around this we need an extra layer of indirection to prevent the token fr
 
 If we pass a macro to ~DEFER()~ we can prevent it from being painted blue, but then we need a way to force a re-scan.
 
+#+CAPTION: [[https://godbolt.org/z/6qYKKo6hW][Example]]
 #+BEGIN_SRC c
   #define EXPAND(...) __VA_ARGS__
 
@@ -395,7 +396,6 @@ If we pass a macro to ~DEFER()~ we can prevent it from being painted blue, but t
   
   EXPAND(DEFER(f)(1))
 #+END_SRC
-#+CAPTION: [[https://godbolt.org/z/6qYKKo6hW][Example]]
 
 One expansion is easy, but with only one layer of ~EXPAND()~ it stops there. Fortunately it's not hard to have an exponential number of expansions.
 
