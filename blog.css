@@ -36,6 +36,7 @@ h1 { font-size: 1em; margin: 0; }
 .toolbar {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
 	line-height: 2em;
 	margin-left: 2px;
 	position: relative;
@@ -137,6 +138,7 @@ label[for="address"] { margin: 0 4px 0 8px; }
 }
 main {
 	background: #efe;
+	border-top: 1px solid #fff;
 	box-shadow: inset -1px -1px #fff,inset 1px 1px gray,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
 	font-size: 14px;
 	height: calc(100vh - 140px - 2em);
