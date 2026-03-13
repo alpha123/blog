@@ -50,7 +50,8 @@
 				function close_() {
 					document.querySelector('.window').style.display = 'none';
 				}
-				function goToAddress() {
+				function goToAddress(e) {
+					e.preventDefault();
 					var addr = document.getElementById('address').value;
 					if (!/^https?:/.test(addr)) addr = 'http:' + (/^\/\//.test(addr) ? '' : '//') + addr;
 					var frame = document.getElementById('browserframe');
@@ -157,7 +158,7 @@
 			</a>
 			<button aria-label="Print" onclick="print()">Print</button>
 		</nav>
-		<form class="toolbar addressbar" action="" onsubmit="goToAddress()">
+		<form class="toolbar addressbar" action="" onsubmit="goToAddress(event)">
 			<label for="address">A<span class="hotunderline">d</span>dress</label>
 			<img src="/blog/ie.png" />
 			<input type="text" id="address">

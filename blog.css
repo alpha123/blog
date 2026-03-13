@@ -34,9 +34,9 @@ h1 { font-size: 1em; margin: 0; }
 	position: fixed;
 }
 .toolbar {
-	border-top: 1px solid #fff;
 	border-bottom: 1px solid gray;
 	border-right: 1px solid gray;
+	border-top: 1px solid #fff;
 	line-height: 2em;
 	margin-left: 2px;
 	position: relative;
@@ -70,7 +70,7 @@ h1 { font-size: 1em; margin: 0; }
 	position: relative;
 	transform: translateY(5px);
 }
-.toolbar button, .toolbar a {
+.buttonsbar button, .buttonsbar a {
 	box-shadow: none;
 	box-sizing: border-box;
 	cursor: default;
@@ -81,22 +81,22 @@ h1 { font-size: 1em; margin: 0; }
 	position: relative;
 	padding: 1em 0 0 0;
 }
-.toolbar a {
+.buttonsbar a {
 	color: #000;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
 }
-.toolbar a:focus {
+.buttonsbar a:focus {
 	outline: 1px dotted #000;
 	outline-offset: -4px;
 }
-.toolbar a:active {
+.buttonsbar a:active {
 	box-shadow: inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey;
 }
-.toolbar a:active > span { display: inline-block; }
-.toolbar a:active > span { transform: translate(1px,1px); }
-.toolbar button::before, .toolbar a::before {
+.buttonsbar a:active > span { display: inline-block; }
+.buttonsbar a:active > span { transform: translate(1px,1px); }
+.buttonsbar button::before, .buttonsbar a::before {
 	content: "";
 	height: 20px;
 	left: calc(50% - 10px);
@@ -124,7 +124,7 @@ a[aria-label="Mail"]::before { background: url(ui-icons-grayscale.png) -260px 0;
 a[aria-label="Mail"]:hover::before { background: url(ui-icons.png) -260px 0; }
 button[aria-label="Print"]::before { background: url(ui-icons-grayscale.png) -700px 0; }
 button[aria-label="Print"]:hover::before { background: url(ui-icons.png) -700px 0; }
-.addressbar { display: flex; }
+.addressbar { display: flex; margin-bottom: 0; }
 label[for="address"] { margin: 0 4px 0 8px; }
 .addressbar > img {
 	height: 16px;
@@ -132,8 +132,21 @@ label[for="address"] { margin: 0 4px 0 8px; }
 	z-index: 10;
 }
 #address {
+	flex: 1;
 	margin-left: -19px;
 	padding-left: 22px;
+}
+#go {
+	align-items: center;
+	box-shadow: none;
+	display: flex;
+	min-width: unset;
+}
+#go > img { filter: grayscale(1); }
+#go:hover > img { filter: none; }
+#browserframe {
+	border: none;
+	height: 100%;
 	width: 100%;
 }
 main {

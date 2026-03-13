@@ -35,8 +35,8 @@ h1 { font-size: 1em; margin: 0; }
 }
 .toolbar {
 	border-bottom: 1px solid gray;
-	border-top: 1px solid #fff;
 	border-right: 1px solid gray;
+	border-top: 1px solid #fff;
 	line-height: 2em;
 	margin-left: 2px;
 	position: relative;
@@ -124,7 +124,7 @@ a[aria-label="Mail"]::before { background: url(../ui-icons-grayscale.png) -260px
 a[aria-label="Mail"]:hover::before { background: url(../ui-icons.png) -260px 0; }
 button[aria-label="Print"]::before { background: url(../ui-icons-grayscale.png) -700px 0; }
 button[aria-label="Print"]:hover::before { background: url(../ui-icons.png) -700px 0; }
-.addressbar { display: flex; }
+.addressbar { display: flex; margin-bottom: 0; }
 label[for="address"] { margin: 0 4px 0 8px; }
 .addressbar > img {
 	height: 16px;
@@ -142,11 +142,12 @@ label[for="address"] { margin: 0 4px 0 8px; }
 	display: flex;
 	min-width: unset;
 }
-#go > img {
-	filter: grayscale(1);
-}
-#go:hover > img {
-	filter: none;
+#go > img { filter: grayscale(1); }
+#go:hover > img { filter: none; }
+#browserframe {
+	border: none;
+	height: 100%;
+	width: 100%;
 }
 main {
 	background: #efe;
@@ -160,7 +161,6 @@ main {
 .maximized main { height: calc(100vh - 140px); }
 main h2 { font-size: 2rem; }
 main img { max-width: 800px; }
-#browserframe { border: none; height: 100%; width: 100%; }
 .post-header h1 { font-size: 3rem; }
 .imggroup > p {
 	display: grid;

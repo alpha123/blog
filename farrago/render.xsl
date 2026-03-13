@@ -51,6 +51,28 @@
 				function close_() {
 					document.querySelector('.window').style.display = 'none';
 				}
+				function goToAddress(e) {
+					e.preventDefault();
+					var addr = document.getElementById('address').value;
+					if (!/^https?:/.test(addr)) addr = 'http:' + (/^\/\//.test(addr) ? '' : '//') + addr;
+					var frame = document.getElementById('browserframe');
+					if (frame == null) {
+						frame = document.createElement('iframe');
+						frame.id = 'browserframe';
+						var main = document.getElementById('main');
+						main.style.padding = 0;
+						main.innerHTML = '';
+						main.appendChild(frame);
+					}
+					try {
+						var url = new URL(addr);
+						if (url.hostname == 'google.com') {
+							url.protocol = 'https:';
+							url.searchParams.set('igu', '1');
+						}
+						frame.src = url.toString();
+					} catch (e) {}
+				}
 				]]></script>
 			</body>
 		</html>
@@ -137,7 +159,7 @@
 			</a>
 			<button aria-label="Print" onclick="print()">Print</button>
 		</nav>
-		<div class="toolbar addressbar">
+		<form class="toolbar addressbar" action="" onsubmit="goToAddress(event)">
 			<label for="address">A<span class="hotunderline">d</span>dress</label>
 			<img src="/blog/ie.png" />
 			<input type="text" id="address">
@@ -145,7 +167,8 @@
 					<xsl:value-of select="concat($baseUrl, $url)" />
 				</xsl:attribute>
 			</input>
-		</div>
+			<button id="go"><img src="/blog/go.png" />Go</button>
+		</form>
 	</xsl:template>
 	<xsl:template match="post">
 		<xsl:variable name="slug" select="/post/@slug" />
