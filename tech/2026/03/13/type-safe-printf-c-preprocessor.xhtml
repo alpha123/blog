@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="../../../render.xsl"?><post slug="type-safe-printf-c-preprocessor" published="2026-03-13" exported="2026-03-13 15:02:59"><title>Type-safe printf() with the C preprocessor</title><author>pecan</author><tags><tag>c</tag></tags><content><p>
+It always annoyed me slightly that even though the intended types of arguments to <code>printf()</code> are known at compile time
+the format string still has to be runtime interpreted. Also, if you use fixed-width integer types extensively it gets
+annoying to write <code>PRIu64</code>, <code>PRIi32</code>, etc everywhere. Fortunately with modern C features and some slight (ab)use of the
+C preprocessor we can do much better.
+</p>
+
+<p>
+Let's write a compile-time, type-safe <code>printf()</code> replacement. For fun, let's do it without libc and use only facilities
+provided by the operating system.
+</p>
+
+<p>
+Our strategy is use the preprocessor to rewrite the following
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org116e094">const char *world = "world";
+int x = 283;
+PutLine(&amp;stdout, "hello ", world, " x: ", x);
+</pre>
+</div>
+
+<p>
+into something like
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">WriteCString(&amp;stdout, "hello ");
+WriteCString(&amp;stdout, world);
+WriteCString(&amp;stdout, " x: ");
+WriteInt(&amp;stdout, x);
+WriteCString(&amp;stdout, "\n");
+</pre>
+</div>
+
+<p>
+First, let's take care of the actual I/O primitives. We'll define a structure for buffering output:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org731e97c">enum ioerror { IOERR_OK = 0, IOERR_WRITE_FAILED = -1 };
+struct iobuf {
+	ssize_t cap;
+	ssize_t len;
+	uint8_t *buf __attribute__((counted_by(cap)));
+	int fd;
+	enum ioerror err;
+};
+</pre>
+</div>
+
+<p>
+We need a file descriptor to write to, a buffer to accumulate our formatted output in, and a flag to check for errors. I
+<a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1428r0.pdf">prefer signed sizes</a> and use the <a href="https://gcc.gnu.org/onlinedocs/gcc/Common-Attributes.html#index-counted_005fby"><code>counted_by</code></a> attribute to enable catching errors with <code>-fsanitize=bounds</code>, and for
+documentation purposes.
+</p>
+
+<details class="status-field-border"><summary>Aside: Portability</summary>
+<p>
+For the sake of simplicity we're sticking to just Linux here, but it doesn't require much more code to support other
+systems. All that has to be done is hide the <code>fd</code> member behind a typedef that expands to <code>int</code> on POSIX and <code>HANDLE</code> on
+Win32, and then introduce a wrapper function to perform the write via the appropriate OS interface (<code>write()</code> on POSIX
+or <code>WriteFile()</code> on Win32).
+</p>
+
+<p>
+Unfortunately, on most platforms besides Linux and Windows we do have to link to libc, since Linux is unusual in having
+a stable syscall interface. Other *nix operating systems do not have stable syscall numbers and require you to go
+through libc. Windows is similar in requiring you to go through the interface exposed in kernel32.dll rather than making
+raw syscalls, but kernel32.dll is mapped into every process's address space automatically, so you don't have to link
+against anything extra.
+</p>
+</details>
+
+<p>
+How do we get one of these <code>struct iobuf</code> instances? Well, somewhere in our <code>main()</code> function we can put
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="orgca64f4c">uint8_t buf[256];
+struct iobuf stdout = {.cap = sizeof(buf), .buf = buf, .fd = 1};
+</pre>
+</div>
+
+<p>
+and then pass that to anything that needs to write to stdout.
+</p>
+
+<p>
+Now we need a couple of functions to append to our buffer and flush our output to the OS:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org17d6ac1">void Flush(struct iobuf *io)
+{
+	const uint8_t *buf = io-&gt;buf;
+	// partial writes are possible on Linux, where write() succeeds but writes fewer bytes than requested.
+	while (io-&gt;len &gt; 0) {
+		ssize_t written = sys_write(io-&gt;fd, buf, io-&gt;len);
+		if (written &lt; 0) {
+			io-&gt;err = IOERR_WRITE_FAILED;
+			break;
+		}
+		buf += written;
+		io-&gt;len -= written;
+	}
+}
+
+void WriteBytes(struct iobuf *io, ssize_t n, const uint8_t bytes[n])
+{
+	ssize_t written = 0;
+	while (io-&gt;err == 0 &amp;&amp; written &lt; n) {
+		ssize_t free = io-&gt;cap - io-&gt;len;
+		ssize_t z = MIN(free, n);
+		__builtin_memcpy(io-&gt;buf + io-&gt;len, bytes, z);
+		written += z;
+		io-&gt;len += z;
+		bytes += z;
+		if (z &lt; n) Flush(io);
+	}
+}
+</pre>
+</div>
+
+<p>
+All the <code>WriteBytes()</code> function does is copy to our internal buffer and then flush it to the OS once it fills ups.
+<code>Flush()</code> is responsible for doing the actual OS write, here done by calling the <a href="https://github.com/torvalds/linux/blob/1f318b96cc84d7c2ab792fcc0bfd42a7ca890681/tools/include/nolibc/sys.h#L886-L888"><code>sys_write()</code></a> function provided by the
+<a href="https://lwn.net/Articles/920158/">nolibc.h header</a> that ships with recent Linux kernels. One complication is that the <code>write()</code> syscall can succeed but
+write fewer bytes than requested, so we have to call it in a loop until it either fails or writes everything. On Win32,
+writes either succeed fully or not at all, so one need not worry about partial writes and the <code>Flush()</code> function is much
+simpler.
+</p>
+
+<p>
+The advantage of keeping our error code inside the <code>struct iobuf</code> instead of returning it from <code>Flush()</code> is that we can
+call <code>WriteBytes()</code> many times and then check the error only once at the end. Note that if an error happens
+<code>WriteBytes()</code> becomes a no-op, so we effectively fall through to wherever the error is handled.
+</p>
+
+<p>
+With our output primitives out of the way we can get to the formatting parts. We need to define a bunch of functions
+that format the things we care about and call <code>WriteBytes()</code> to store their results in our output buffer.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org41cfa8f">void WriteInt(struct iobuf *io, int64_t x)
+{
+	// longest possible int64 decimal representation is 20 characters (-9223372036854775808)
+	uint8_t s[20];
+	ssize_t i = 20;
+	bool neg = x &lt; 0;
+	if (neg) x = -x;
+	do s[--i] = '0' + x % 10; while (x /= 10);
+	if (neg) s[--i] = '-';
+	WriteBytes(io, 20 - i, s + i);
+}
+
+void WriteUInt(struct iobuf *io, uint64_t x)
+{
+	// also 20: no sign character but maximum uint64 is one character longer (18446744073709551615)
+	uint8_t s[20];
+	ssize_t i = 20;
+	do s[--i] = '0' + x % 10; while (x /= 10);
+	WriteBytes(io, 20 - i, s + i);
+}
+</pre>
+</div>
+
+<p>
+Integers are very straightforward. We only need two functions, one for signed and one for unsigned, since we can cast
+any smaller integer to a <code>(u)int64_t</code> without the output changing. Floats are much more challenging, since correctly
+converting floats to strings that can be parsed back to exactly the same value is a surprisingly complex problem. The
+most practical option is to existing high-quality float-to-string implementation like <a href="https://github.com/ulfjack/ryu">ryu</a> or <a href="https://github.com/vitaut/zmij">zmij</a>.
+</p>
+
+<p>
+Pointers are pretty much the same as integers:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org960a11e">void WritePtr(struct iobuf *io, void *p)
+{
+	uintptr_t x = (uintptr_t)p;
+	uint8_t s[16];
+	ssize_t i = 16;
+	do s[--i] = (x % 16 &lt; 10 ? '0' + x % 16 : 'a' + x % 16 - 10); while (x /= 16);
+	WriteBytes(io, 16 - i, s + i);
+}
+</pre>
+</div>
+
+<p>
+For strings I like to avoid traditional C-style <code>\0</code>-terminated strings, but we want the convenience of being able to
+write string literals without explicitly passing their length. Fortunately this is possible with a bit of trickery and a
+clang extension.
+</p>
+
+<p>
+We'll start by defining a struct to hold pointer + length pairs. Later you'll see why we wrap these into a struct rather
+than passing separate arguments.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org111a92a">struct stringfmt { ssize_t len; uint8_t *ptr __attribute__((counted_by(len))); };
+
+#define $S(n,s) ((struct stringfmt){.len = (n), .ptr = (s)})
+</pre>
+</div>
+
+<p>
+We define a helper macro to construct <code>struct stringfmt</code>​s for readability, and <code>$S</code> is visually a bit evocative of the
+traditional printf-style <code>%s</code> format specifier. One nice advantage of using structs for wrapping our format options is
+that designated initializers can be used a bit like keyword arguments, which is much more readable than normal printf
+specifiers. One can imagine defining a struct for advanced integer formatting options like
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">struct intfmt {
+	int64_t x;
+	int32_t width;
+	enum { JUSTIFY_RIGHT, JUSTIFY_LEFT } justify;
+	bool hex;
+	bool force_sign;
+	uint8_t pad;
+};
+
+#define $I(i,...) ((struct intfmt){.x = (i) __VA_OPT__(,) __VA_ARGS__})
+</pre>
+</div>
+
+<p>
+which would allow things like <code>PutLine("x: ", $I(x, .width = 10, .force_sign = true, .pad = '0'))</code>. I find this easier
+than remembering the order of fields in <code>printf("x: %+010" PRIi64 "\n")</code>, and it avoids special cases like the printf
+<code>*</code> specifier for variable widths. While there's something to be said for compactness, I use the more complex format
+specifiers rarely enough that I always forget the exact syntax for them.
+</p>
+
+<p>
+Returning to strings, we need two functions: one that takes our pointer + length pairs and one that takes a standard
+<code>const char *</code> string.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="orgf8df356">void WriteStringFmt(struct iobuf *io, struct stringfmt fmt)
+{
+	WriteBytes(io, fmt.len, fmt.ptr);
+}
+
+void WriteCString(struct iobuf *io, const char *const s __attribute__((pass_dynamic_object_size(2))))
+{
+	ssize_t len = __builtin_dynamic_object_size(s, 2);
+	assert(len &gt; 0);  // fails if we were passed something other than a string literal
+	WriteBytes(io, len - 1 /* trim off \0 */, (const uint8_t *)s);
+}
+</pre>
+</div>
+
+<p>
+The trick is that this uses the clang-specific <a href="https://clang.llvm.org/docs/AttributeReference.html#pass-object-size-pass-dynamic-object-size"><code>pass_dynamic_object_size</code></a> attribute to cause the caller to pass an
+extra, invisible parameter containing the size of the <code>s</code> argument if it is statically known. This parameter is then
+retrieved with the <a href="https://clang.llvm.org/docs/LanguageExtensions.html#evaluating-object-size"><code>__builtin_dynamic_object_size()</code></a> function. If the size of <code>s</code> can't be determined by the compiler
+<code>__builtin_dynamic_object_size()</code> returns 0, so we can tell if we were called with a string whose size was not a
+compile-time constant, which usually means anything that's not a string literal. This is an error on the part of the
+caller and fails the assert.
+</p>
+
+<p>
+(Alternatively, you could just call <code>strlen()</code>, but we're trying to avoid libc and zero-terminated strings as much as
+possible.)
+</p>
+
+<p>
+The <code>_dynamic</code> part means the compiler is allowed to insert a small amount of code to more accurately deduce the size of
+the object. For example, in a case like the following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">WriteCString(io, a &lt; b ? "ab" : "much longer string");
+</pre>
+</div>
+
+<p>
+If we had used <code>__attribute__((pass_object_size(2)))</code> then we would always receive a <code>len</code> of 3, since that is all the
+compiler is able to prove is always accessible. With <code>pass_dynamic_object_size</code>, this gets rewritten to something like
+<code>WriteCString(io, a &lt; b ? "…" : "…", a &lt; b ? 3 : 19)</code> instead.
+</p>
+
+<p>
+That aside, writing strings just involves shuffling bytes to our output buffer. You can imagine implementing other
+extensions like minimum width and padding fairly straightforwardly.
+</p>
+
+<p>
+With our individual formatting functions out of the way it's time to tie it all together into a nicer API. You could use
+them as they are and manually make a separate function call for each variable you want to print but we would like to
+write that part automatically, as in the example at the beginning of the article.
+</p>
+
+<p>
+The first step is to use C11's <code>_Generic</code> feature to dispatch to one of our formatting functions based on the type of
+the argument. This is pretty much just manual function overloading.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="orgb9fd6b2">void Fail(void);
+
+#define DISPATCH_WRITE(x) \
+	_Generic((x), \
+		int8_t: WriteInt, \
+		uint8_t: WriteUInt, \
+		int16_t: WriteInt, \
+		uint16_t: WriteUInt, \
+		int32_t: WriteInt, \
+		uint32_t: WriteUInt, \
+		int64_t: WriteInt, \
+		uint64_t: WriteUInt, \
+		size_t: WriteUInt, \
+		ssize_t: WriteInt, \
+		/* if you were to implement floats: \
+		   float: WriteFloat, \
+		   double: WriteDouble, */ \
+		char *: WriteCString, \
+		const char *: WriteCString, \
+		struct stringfmt: WriteStringFmt, \
+		default: _Generic((x) - (x), ptrdiff_t: WritePtr, default: Fail) \
+	)($_io, (x));
+</pre>
+</div>
+
+<p>
+<code>_Generic</code> works by taking an expression and a list of <code>type: replacement</code> pairs. It doesn't evaluate the controlling
+expression but matches its type against the pairs and replaces itself with the matching replacement expression. I tend
+to think of it as somewhere between the preprocessor and the compiler. Unlike the preprocessor it can access types, but
+it's completely eliminated by the time code generation starts. Its main use is for type-generic math so you can write
+<code>sqrt(2.0f)</code> instead of sqrtf.
+</p>
+
+<p>
+The nested <code>_Generic</code> on <code>(x) - (x)</code> is to allow dispatching any pointer (other than the ones explicitly listed above
+that) to <code>WritePtr()</code>. Though any (non-function) C pointer is implicitly convertible to <code>void *</code>, <code>void *</code> in <code>_Generic</code>
+only matches actual void pointers. However, the result of subtracting any type of pointer from itself is always a
+<code>ptrdiff_t</code>, so we can match on that instead rather than requiring the caller to explicitly cast pointers to <code>void *</code>.
+</p>
+
+<p>
+One quirk of <code>_Generic</code> is that each replacement expression has to typecheck independently before the <code>_Generic</code> is
+eliminated. This is why you usually have to write <code>_Generic(x, char *: f_str, float: f_float)(x)</code> instead of
+<code>_Generic(x, char *: f_str(x), float: f_float(x))</code>. This is also what the <code>default: Fail</code> branch in the nested generic
+is for, since that branch has to type check even if another branch is already matched by the outer <code>_Generic</code>. We don't
+need to define the <code>Fail()</code> function anywhere, since we explicitly want a compile error if we ever emit it (which would
+mean we tried to print something without a formatter).
+</p>
+
+<p>
+It's also worth noting that <code>_Generic</code> considers <code>const</code> and non-<code>const</code> pointers to be different types, and one will
+never match the other.
+</p>
+
+<p>
+You may notice the reference to the <code>$_io</code> variable which is not yet defined. We'll get back to that.
+</p>
+
+<p>
+Now we need some way to call our <code>DISPATCH_WRITE()</code> macro for each argument to <code>PutLine()</code>. Fortunately, looping with
+the C preprocessor got a lot easier with the <code>__VA_OPT__()</code> feature in C23.
+</p>
+
+<p>
+<code>__VA_OPT__()</code> is legal in the expansion of a variadic macro and expands to its argument if <code>__VA_ARGS__</code> is of non-zero
+length, and expands to nothing otherwise. The intended use case is when you have a macro like
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">#define WARN(msg,...) printf("[WARNING] " msg, __VA_ARGS__)
+</pre>
+</div>
+
+<p>
+If <code>WARN()</code> is called with only the first argument it will expand to <code>printf("[WARNING] &lt;message&gt;",)</code>, which is a syntax
+error. With <code>__VA_OPT__()</code> you can write it as
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">#define WARN(msg,...) printf("[WARNING] " msg __VA_OPT__(,) __VA_ARGS__)
+</pre>
+</div>
+
+<p>
+and it will properly include the comma only when necessary.
+</p>
+
+<p>
+Previously this could be accomplished with non-standard features like the special behavior of the <code>, ## __VA_ARGS__</code>
+sequence in gcc, but <code>__VA_OPT__()</code> is both standardized and more flexible. For instance, you can include other macros
+in the argument of <code>__VA_OPT__()</code>, which will expand if <code>__VA_OPT__()</code> expands.
+</p>
+
+<p>
+You might be able to see how we're going to abuse this to loop over our arguments to <code>PutLine()</code>. <code>__VA_OPT__()</code> seems a
+lot like the base case of recursion: we can use it to execute another macro if we still have arguments left, and stop
+iteration otherwise.
+</p>
+
+<p>
+The techniques in this section are mainly from <a href="https://github.com/pfultz2/Cloak/wiki/C-Preprocessor-tricks,-tips,-and-idioms">these</a> <a href="https://www.scs.stanford.edu/~dm/blog/va-opt.html">two</a> excellent articles.
+</p>
+
+<p>
+When a macro is expanded its expansion is scanned again for macros; however by default preprocessor macros cannot expand
+recursively. That is, <code>#define f(x) f((x)+1)</code> when called as <code>f(1)</code> expands to <code>f(1+1)</code> and not <code>1+1+1+…</code>. When a macro
+is expanded the token corresponding to its name is marked (referred to as "painted blue") and blue tokens are ignored as
+expansion candidates during re-scan. This includes during any expansions triggered during the re-scan, so this can't be
+bypassed by e.g.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">#define f(x) f_recurse((x)+1)
+#define f_recurse(x) f(x)
+</pre>
+</div>
+
+<p>
+To get around this we need an extra layer of indirection to prevent the token from being painted blue.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org4118d67">#define EMPTY()
+#define DEFER(x) x EMPTY()
+</pre>
+</div>
+
+<p>
+If we pass a macro to <code>DEFER()</code> we can prevent it from being painted blue, but then we need a way to force a re-scan.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c">#define EXPAND(...) __VA_ARGS__
+
+#define f(x) DEFER(f_recurse) () ((x)+1)
+#define f_recurse() f
+
+EXPAND(DEFER(f)(1))
+</pre>
+</div>
+<p>
+One expansion is easy, but with only one layer of <code>EXPAND()</code> it stops there. Fortunately it's not hard to have an exponential number of expansions.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org89e8d5c">#define EVAL(...)  EVAL1(EVAL1(EVAL1(__VA_ARGS__)))
+#define EVAL1(...) EVAL2(EVAL2(EVAL2(__VA_ARGS__)))
+#define EVAL2(...) EVAL3(EVAL3(EVAL3(__VA_ARGS__)))
+#define EVAL3(...) EVAL4(EVAL4(EVAL4(__VA_ARGS__)))
+#define EVAL4(...) EVAL5(EVAL5(EVAL5(__VA_ARGS__)))
+#define EVAL5(...) __VA_ARGS__
+</pre>
+</div>
+
+<p>
+We can get <a href="https://godbolt.org/z/ddx48Y787">365</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> expansions out of 6 lines. This does put a hard limit on the number of arguments to <code>PutLine()</code> we
+can support, but it's trivial to add more if necessary.
+</p>
+
+<p>
+With this, we can build a loop in the C preprocessor:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org05c8a3c">#define FOREACH(f,...) __VA_OPT__(EVAL(FOREACH_IMPL(f, __VA_ARGS__)))
+#define FOREACH_IMPL(f,x,...) f(x) __VA_OPT__(DEFER(FOREACH_RECURSE) () (f, __VA_ARGS__))
+#define FOREACH_RECURSE() FOREACH_IMPL
+</pre>
+</div>
+
+<p>
+This is admittedly a bit arcane, but now that it's built it's pretty easy to use.
+</p>
+
+<p>
+Finally we can glue it all together:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-c" id="org226d0dc">#define PutLine(io,...) do{ struct iobuf *$_io = (io); FOREACH(DISPATCH_WRITE, __VA_ARGS__, "\n"); Flush($_io); }while(0)
+</pre>
+</div>
+
+<p>
+In case evaluating <code>(io)</code> has side effects we evaluate it once here and stash the results in <code>$_io</code>, which is used in
+<code>DISPATCH_WRITE()</code>.
+</p>
+
+<p>
+It should be pretty clear how this works now. We loop through all the arguments of <code>PutLine()</code> (except the iobuf) using
+our preprocessor metaprogramming and for each of them use <code>_Generic</code> to dispatch to the correct formatting function for
+an argument of that type. Those convert their arguments to strings and append to a buffer, which we flush with the
+appropriate OS function.
+</p>
+
+<p>
+Overall, this isn't a lot of code for an arguably nicer API than <code>printf()</code>. glibc <code>printf()</code> alone is <a href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdio-common/vfprintf-internal.c;h=14ac0d97625297fc25989e741b98f15cd9c1b6ed;hb=HEAD">over 1500 lines
+of code</a><sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> and needs special compiler support to issue warnings. musl is <a href="https://git.musl-libc.org/cgit/musl/tree/src/stdio/vfprintf.c">much better</a>, but still on the order of ~450
+LOC. While our implementation is very barebones, it's easy to extend and can provide options via standard C features
+like designated initializers rather than the limited printf mini-language. Also, it's easy to add support for your own
+custom types by implementing a <code>Write*</code> function for them and adding it to the <code>_Generic</code> list.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+
+<p>
+Should you use this in production? Probably not, given that most people are not quite as fond of grotesque preprocessor
+macros as I am. It's more just meant to exhibit some modern C features and present a novel use for them. I will say that
+I do use an implementation very much like this in some of my personal projects where no one else has to see it and I
+find it very usable and convenient.
+</p>
+
+<p>
+<a href="./iobuf.c">Collected code in this article</a> (requires a recent version of clang)
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Each level <code>EVALn</code> gets called 3<sup>n</sup> times, plus one for the outermost <code>EVAL()</code>, plus the first
+expansion for free.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This doesn't even include float-to-string, which is another 1200+ (though it would bloat ours quite a lot
+as well).</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">I was hoping it
+might be possible to add new <code>_Generic</code> cases without editing the macro directly by abusing the gcc
+<code>_Pragma("push_macro")</code> and <code>_Pragma("pop_macro")</code> extensions from inside a helper macro with an API like
+<code>DEFINE_FORMATTER(type, WriteType)</code>, but this is extremely brittle and I can't get it to work in the general case.</p></div></div>
+
+
+</div>
+</div></content></post>
