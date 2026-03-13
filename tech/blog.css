@@ -180,5 +180,6 @@ figcaption { font-size: 0.79em; font-style: italic; }
 details.status-field-border { padding: 0.5em 1em; }
 
 .org-src-container { display: flex; flex-direction: column-reverse; }
+.listing-number { display: none; }
 .footnotes { visibility: hidden; }
 .footdef { display: flex; gap: 0.6em; }
