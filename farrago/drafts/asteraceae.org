@@ -47,4 +47,30 @@ https://en.wikipedia.org/wiki/Sesquiterpene_lactone
 - dandelions in particular are some of the relatively few plants to reproduce primarily asexually
 
 * I.
+You are probably familiar with sunflowers, dandelions, artichoke, lettuce, cosmos, daisies, dahlia, marigolds, tarragon,
+chamomile, zinnia, chrysanthemums, chicory, goldenrods, and asters. What you might not realize, though, is that these are
+all in the same family of plants, the Asteraceae. I happen to think these plants are really interesting; it's probably
+my favorite family of flowering plants and I will attempt to explain why they're so cool.
+
+Asteraceae is the largest family of flowering plants with over 32,000 currently described species. This is about 10% of
+all flowering plants. They span the entire globe, inhabit every continent except Antarctica (though fossil specimens are
+known there), spanning latitudes from [[https://en.wikipedia.org/wiki/Pleurophyllum_hookeri][subantarctic islands]] to [[https://en.wikipedia.org/wiki/Arctanthemum_integrifolium][the very northern tip of Greenland]], representing probably
+some of the northernmost flowering plants in the world. Species range in elevation from sea level to /Saussurea
+gnaphalodes/, which has been found at [[https://hal.science/hal-03011674v1/preview/Dentant_highest_plants_AlBo_2018.pdf][21,000 ft on Mount Everest]], representing the highest elevation for a vascular
+plant ever recorded. They are found in every type of ecosystem, though they are especially common in grasslands where
+they are usually the dominant plants alongside grasses. Asteraceae range in size from [[https://en.wikipedia.org/wiki/Raoulia_eximia][tiny alpine cushions]] to the 110 ft
+tall /[[https://en.wikipedia.org/wiki/Strobocalyx_arborea][Strobocalyx arborea]]/. Most of them, though, look a lot like sunflowers: decently sized perennial (or sometimes
+annual) herbs with yellow flowers. Botanists affectionately refer to them as “damn yellow composites” in reference to
+the fact that most of them kind of look the same.
+
+Perhaps most interestingly, Asteraceae is also one of the evolutionarily newest families of flowering plants. They
+likely evolved in southern South America around 83 million years ago, with the oldest fossil evidence being 66 million
+year old grains of pollen found in Antarctica. Their modern-day distribution still reflects this, with centers of
+diversity in South American and southern Africa. This makes them probably the most recent of the major plant families.
+This raises a question: How did one of the world's newest plant families become the most diverse? What adaptations do
+they have that aided them in colonizing the entire globe from 53°S to 82°N and sea level to Mount Everest?
+
+#+CAPTION: /Arctanthemum integrifolium/ growing in Quttinirpaaq National Park at about 82°N. Flowering plants become rare north of about 75°N. Photo credit: [[https://commons.wikimedia.org/wiki/File:Chrysanthemum_integrifolium_1997-08-05.jpg][Ansgar Walk]].
+[[./img/Arctanthemum_integrifolium.jpg]]
+* II.
 
