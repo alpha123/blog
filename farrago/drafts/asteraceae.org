@@ -194,6 +194,33 @@ In general, the pollination efficiency of composite flowers is very high, and be
 insects for their reproduction this turns out to be a very important advantage.
 ** Inulin/fructans
 ** Secondary metabolites
-(insert this image somewhere else probably)
+Secondary metabolites are xxx
+Plants produce a /lot/ of chemicals, they are basically little chemical factories with infinite energy as long as they
+don't get eaten.
+* IV.
+All of this results in very well-optimized plants that reproduce fast and aggressively. Many Asteraceae species are
+extremely weedy, and they're often some of the first plants to colonize disturbed soil.
+* V.
+So why do I like them so much?
+
+Well, mostly I just think they look nice. I like the color yellow. They often attract a lot of insects which I like to
+watch. Sunflowers are really iconic in Japanese media. That's about it really. From the perspective of engineering
+aesthetics I tend to like well-built generalist solutions that are fairly standard with a small number of ‘tricks’ that
+have an outsized impact relative to their added complexity over anything too elaborate or specialized and thus I find
+the extreme weediness of a lot of Asteraceae species somewhat appealing. You can also find them anywhere; you can get
+out on the side of a highway and you'll probably find some kind of Asteraceae growing there.
+
+[cosmos image]
+
+I like that the flowers are both very pretty and (to me at least) intellectually interesting also. They're very
+different from most other plants, and there's a lot of room in the composite flower design space and different
+Asteraceae species do explore it. This whole post was motivated by me wondering what it was about composite flowers that
+made them so evolutionarily successful, and then finding out it might not even be the composite flowers themselves, or
+it might be a mixture of benefits from the composite flowers plus regular old chemical warfare.
+
+I really like subantarctic islands and also the High Artic and it's neat that they're found in both places.
+
+[conclusion]
+
 #+CAPTION: I don’t actually know what this is.
 [[./img/unknown.jpg]]
