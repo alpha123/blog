@@ -53,15 +53,15 @@ all in the same family of plants, the Asteraceae. I happen to think these plants
 my favorite family of flowering plants and I will attempt to explain why they’re so cool.
 
 Asteraceae is the largest family of flowering plants with over 32,000 currently described species, or nearly 10% of all
-flowering plant species. They span the entire globe, inhabit every continent except Antarctica (though fossil specimens
-are known there), spanning latitudes from [[https://en.wikipedia.org/wiki/Pleurophyllum_hookeri][subantarctic islands]] to [[https://en.wikipedia.org/wiki/Arctanthemum_integrifolium][the very northern tip of Greenland]], representing
-probably some of the northernmost flowering plants in the world. Species range in elevation from sea level to /Saussurea
-gnaphalodes/, which has been found at [[https://hal.science/hal-03011674v1/preview/Dentant_highest_plants_AlBo_2018.pdf][21,000 ft on Mount Everest]], the highest elevation for a vascular plant ever
-recorded. They are found in every type of ecosystem, though they are especially common in grasslands where they are
-usually the dominant plants alongside grasses. Asteraceae range in size from [[https://en.wikipedia.org/wiki/Raoulia_eximia][tiny alpine cushions]] to the 110 ft tall
-/[[https://en.wikipedia.org/wiki/Strobocalyx_arborea][Strobocalyx arborea]]/. Most of them, though, look a lot like sunflowers: decently sized perennial (or sometimes annual)
-herbs with yellow flowers. Botanists affectionately refer to them as “damn yellow composites” in reference to the fact
-that most of them kind of look the same.
+flowering plant species. They are extremely widespread, inhabit every continent except Antarctica (though fossil
+specimens are known there), and span latitudes from [[https://en.wikipedia.org/wiki/Pleurophyllum_hookeri][subantarctic islands]] to [[https://en.wikipedia.org/wiki/Arctanthemum_integrifolium][the very northern tip of Greenland]],
+representing probably some of the northernmost flowering plants in the world. Species range in elevation from sea level
+to [[https://hal.science/hal-03011674v1/preview/Dentant_highest_plants_AlBo_2018.pdf][21,000 ft on Mount Everest]], with the Asteraceae species /Saussurea gnaphalodes/ having the highest elevation for a
+vascular plant ever recorded. They are found in every type of ecosystem, though they are especially common in grasslands
+where they are usually the dominant plants alongside grasses. Asteraceae range in size from [[https://en.wikipedia.org/wiki/Raoulia_eximia][tiny alpine cushions]] to the
+110 ft tall /[[https://en.wikipedia.org/wiki/Strobocalyx_arborea][Strobocalyx arborea]]/. Most of them, though, look a lot like sunflowers: decently sized perennial (or
+sometimes annual) herbs with yellow flowers. Botanists sometimes refer to them as “damn yellow composites” in reference
+to the fact that many of them look kind of the same.
 
 #+CAPTION: /Helianthus tuberosus/ (Jerusalem artichoke), a typical example of an Asteraceae species. Photo credit: [[https://www.inaturalist.org/observations/365407783][Vlada Vinogradova]], CC BY-NC.
 [[./img/Helianthus_tuberosus.jpg]]
@@ -72,29 +72,29 @@ year old grains of pollen found in Antarctica. Their modern-day distribution sti
 diversity in South America and southern Africa. This makes them probably the most recent of the major plant families.
 This raises a question: How did one of the world’s newest plant families become the most diverse?
 
-#+CAPTION: /Arctanthemum integrifolium/ growing in Quttinirpaaq National Park at about 82°N. Flowering plants become rare north of about 75°N. Photo credit: [[https://commons.wikimedia.org/wiki/File:Chrysanthemum_integrifolium_1997-08-05.jpg][Ansgar Walk]], CC BY-SA 2.5.
+#+CAPTION: /Arctanthemum integrifolium/ growing in Quttinirpaaq National Park at about 82°N. Flowering plants  rare north of about 75°N. Photo credit: [[https://commons.wikimedia.org/wiki/File:Chrysanthemum_integrifolium_1997-08-05.jpg][Ansgar Walk]], CC BY-SA 2.5.
 [[./img/Arctanthemum_integrifolium.jpg]]
 * II.
 It might help to define what exactly characterizes the family Asteraceae. The defining trait of the family is their
 composite flower heads, giving rise to the older name Compositae. What looks like a single flower is actually dozens to
 hundreds or sometimes thousands of tiny flowers all growing together.
 
-#+CAPTION: Unidentified /Helianthus/ sp., most likely a wild type of /Helianthus annuus/, the common sunflower. Photos by the author unless otherwise credited, CC BY-SA 4.0.
+#+CAPTION: Unidentified /Helianthus/ sp., most likely a wild type /Helianthus annuus/, the common sunflower. Photos by the author unless otherwise credited, CC BY-SA 4.0.
 [[./img/Helianthus_annuus.jpg]]
 
-Consider the picture above. This is, perhaps surprisingly, /not a flower/. It is what is known as a capitulum, a bunch
-of tiny flowers arranged in a way such as to mimic one flower. If you zoom in, it’s actually pretty easy to notice all
-the individual flowers (called /disk flowers/) in the center of the “flower” (capitulum). They still all have 5 petals
-and look more or less pretty flower-like. In sunflowers this is pretty obvious, but the disk flowers can be even smaller
-and more reduced in other genera.
+Consider the picture above. This is, perhaps surprisingly, not a flower. It is what is known as a capitulum, a bunch of
+tiny flowers arranged in a way such as to mimic one flower. If you zoom in, it’s actually pretty easy to notice all the
+individual flowers (called /disc flowers/) in the center of the “flower” (capitulum). They still all have 5 petals and
+look more or less pretty flower-like. In sunflowers this is pretty obvious, but the disc flowers can be even smaller and
+more reduced in other genera.
 
 [[./img/capitulum.png]]
 
-Even more surprisingly, what look like the pedals of the capitulum are /each their own independent flower/ (known as a
-ray flower) with its pedals fused into one single macro-pedal called a ligule.
+Even more surprisingly, what look like the petals of the capitulum are /each their own independent flower/ (known as a
+ray flower) with its petals fused into one single macro-petal called a ligule.
 
 At the base of the flower is a structure called an involucre made up of phyllaries. These are not flowers, they’re just
-a type of modified leaf more generally called a bract (phyllaries are just the particular type of bract specific to the
+a type of modified leaf more generally called a bract (phyllaries are just a particular type of bract specific to the
 Asteraceae). Involucres or other structures of bracts occur in a lot of plant families but the ones in the Asteraceae
 are usually particularly prominent and sometimes very elaborate. The structure of the involucre can be one of the more
 useful factors for identifying a species within the Asteraceae.
@@ -107,23 +107,93 @@ Thistles are a common example of this.
 #+CAPTION: /Cynara cardunculus/ (artichoke). Photo credit: [[https://www.inaturalist.org/observations/147041946][Awhesian]], CC0.
 [[./img/Cynara cardunculus.jpg]]
 
-In the artichoke photo above, the purple hairlike structures are the disk flowers, the bulbous green part is the
+In the artichoke photo above, the purple hairlike structures are the disc flowers, the bulbous green part is the
 involucre, and the ray flowers are entirely absent. This type of capitulum is known as /discoid/. In discoid heads the
-disk flowers are all bisexual (i.e. have both male and female reproductive structures).
+disc flowers are all bisexual (i.e. have both male and female reproductive structures).
 
-#+CAPTION: /Erigeron/ sp.
-[[./img/Erigeron.jpg]]
+#+CAPTION: /Erigeron speciosus/ (probably).
+[[./img/Erigeron_speciosus.jpg]]
 
-Flower heads with both ray flowers and disk flowers, like sunflowers or the /Erigeron/ species above, are called
-/radiate/. In radiate heads the disk flowers are bisexual and the ray flowers are either sterile with reduced vestigial
+Flower heads with both ray flowers and disc flowers, like sunflowers or the /Erigeron speciosus/ above, are called
+/radiate/. In radiate heads the disc flowers are bisexual and the ray flowers are either sterile with reduced vestigial
 reproductive structures, or pistillate (female).
 
 ← ligulate goes here (get a dandelion photo) (tribe Cichorieae ← includes lettuce/dandelions/chicory)
+#+CAPTION: /Taraxacum officinale/ (common dandelion)
+[[./img/Taraxacum_officinale.jpg]]
 
-Each ray or disk flower produces exactly one seed (unless the ray flowers are sterile).
+Exclusive to the tribe Cichorieae (including lettuce, dandelions, and chicory) are /ligulate/ heads, consisting of a
+single type of flower called ligulate flowers. Ligulate flowers are superficially very similar to ray flowers but they
+form differently, usually resulting in “teeth” at the end of the ligule from how the petals fused together. Also, while
+ray flowers are either sterile or pistillate (female), ligulate flowers are all bisexual. Ligulate flowers are not found
+outside of the Cichorieae, but are universal within that tribe. This is why dandelion seed heads look the way they do;
+each “petal” of the dandelion is an independent flower which turns into a seed.
+
+#+CAPTION: Dandelion teeth. Each one of the teeth is homologous to a petal on a normal flower. Note that teeth are absent on the ray flowers of the species above, but are sometimes found on disc flowers.
+[[./img/teeth.png]]
+
+There are some minor subtypes of these head types as well, usually specific to various genera. There is also a
+surprising amount of variation in head type sometimes even within a species; however the genetics controlling the
+development of ray vs disc flowers work out it seems possible for mutations to occasionally result in individuals with a
+different type of flower head than is usual for that species. Many cultivated chrysanthemums and dahlias, for example,
+have a mutation causing many or all of the disc flowers to turn into ray flowers.
+
+#+BEGIN_EXPORT html
+<figure class="imggroup">
+#+END_EXPORT
+[[./img/domestic_Chrysanthemum.jpg]]
+[[./img/wild_Chrysanthemum.jpg]]
+#+BEGIN_EXPORT html
+<figcaption>Left: /Chrysanthemum/ (probably /Chrysanthemum × morifolium/) mutated to have few or no disc flowers. Photo credit: [[https://www.inaturalist.org/observations/71173999][thowyn]], CC BY-NC. Right: /Chrysanthemum × morifolium/ without the mutation. Photo credit: [[https://www.inaturalist.org/observations/65883427][Wai Shing]], CC BY-NC.</figcaption>
+</figure>
+#+END_EXPORT
+
+#+CAPTION: Cultivated /Dahlia/ mutated to have significantly more ray flowers (some disc flowers still visible in the center). Photo credit: /Needy Girl Overdose/ (anime).
+[[./img/nidhiga_Dahlia.png]]
+
+In all types of composite flower head, each ray or disc flower produces exactly one seed (unless the ray flowers are
+sterile).
 
 Composite flowers are entirely unique to this family and represent a significant evolutionary innovation. This is one of
 the key components to understanding their success.
+* III.
+Composite flowers are the most obvious evolutionary development in the Asteraceae, but not the only one. Generally,
+theories of why these plants are so successful focus on three major factors:
 
+1. Composite flowers
+2. Storing energy as inulin rather than starch
+3. High diversity of secondary metabolites
+
+** Composite flowers
+The mention of sterile ray flowers above may have raised a question: If ray flowers are (sometimes) sterile, what is the
+point of them? In fact, what is the point of composite flowers at all?
+
+In order to attract insect pollinators, a plant has to present some structure that at least kind of looks like a flower.
+Flowering plants and insects have been evolving together for at least 130 million years, and generally the evolution of
+flowers is highly constrained by what insects will pollinate.
+
+Composite flowers, while looking enough like regular flowers to still attract pollinators, provide a few advantages over
+standard flowers. This mostly comes down to the individual flowers being very small and cheap to produce.
+
+One advantage is that because the “petals” are shared among many individual tiny flowers, the energy required to produce
+each individual disc flower is very small. Petals are pretty useful for e.g., visibility to pollinators, providing a
+place to land, etc. In this way composite flowers can look enough like a flower to fulfill those functions, but the
+energy cost required to make petals is amortized across many independent flowers.
+
+(This does raise the question of how Asteraceae species with discoid heads perform. I don't know if they attract fewer
+or different pollinators than the other types of composite head.)
+
+There's some inherent redundancy in having a lot of little flowers too. Even if the composite flower head is severely
+damaged there will most likely still be some individual flowers that are intact and fully functional.
+
+Finally, by having many tiny flowers packed together, if a pollinator lands it will almost always pollinate more than
+one individual flower. Having a lot of small flowers that each produce one seed is better for genetic diversity than
+having one big flower that gets pollinated once and produces many seeds.
+
+In general, the pollination efficiency of composite flowers is very high, and because plants are mostly dependent on
+insects for their reproduction this turns out to be a very important advantage.
+** Inulin/fructans
+** Secondary metabolites
+(insert this image somewhere else probably)
 #+CAPTION: I don’t actually know what this is.
-[./img/unknown.jpg]
+[[./img/unknown.jpg]]
