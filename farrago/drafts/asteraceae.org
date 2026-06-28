@@ -48,9 +48,12 @@ https://en.wikipedia.org/wiki/Sesquiterpene_lactone
 
 * I.
 You are probably familiar with sunflowers, dandelions, artichoke, lettuce, cosmos, daisies, dahlia, marigolds, tarragon,
-chamomile, zinnia, chrysanthemums, chicory, goldenrods, and asters. What you might not realize, though, is that these are
-all in the same family of plants, the Asteraceae. I happen to think these plants are really interesting. It’s probably
-my favorite family of flowering plants and I will attempt to explain why they’re so cool.
+chamomile, zinnia, chrysanthemums, chicory, goldenrods, and asters. What you might not realize, though, is that these
+are all in the same family of plants, the Asteraceae[fn:: It's Latin, it's a dead language, you can pronounce it however
+you want, but most people say something like /​æ.stəˈɹei.si.iː​/ (i.e. “aster-ay-see-ee”). /-aceae/ is the suffix on all
+plant family names, meaning something like ‘having the form of’. /Aster/ means star in Latin.]. I happen to think these
+plants are really interesting. It’s probably my favorite family of flowering plants and I will attempt to explain why
+they’re so cool.
 
 Asteraceae is the largest family of flowering plants with over 32,000 currently described species, or nearly 10% of all
 flowering plant species. They are extremely widespread, inhabit every continent except Antarctica (though fossil
@@ -178,7 +181,10 @@ standard flowers. This mostly comes down to the individual flowers being very sm
 One advantage is that because the “petals” are shared among many individual tiny flowers, the energy required to produce
 each individual disc flower is very small. Petals are pretty useful for e.g., visibility to pollinators, providing a
 place to land, etc. In this way composite flowers can look enough like a flower to fulfill those functions, but the
-energy cost required to make petals is amortized across many independent flowers.
+energy cost required to make petals is amortized across many independent flowers. Similarly, the phyllaries of the whole
+head take over the protective functions of sepals, so the sepals on individual flowers can either be extremely reduced,
+if not absent entirely, or they can develop into parachute structures to support wind pollination, which is common
+throughout the family.
 
 (This does raise the question of how Asteraceae species with discoid heads perform. I don't know if they attract fewer
 or different pollinators than the other types of composite head.)
@@ -192,16 +198,47 @@ having one big flower that gets pollinated once and produces many seeds.
 
 In general, the pollination efficiency of composite flowers is very high, and because plants are mostly dependent on
 insects for their reproduction this turns out to be a very important advantage.
-** Inulin/fructans
+** Inulin
+Most plants store energy as starch. One of the characteristic developments of the Asteraceae is that they typically
+store energy as inulin (not to be confused with in​*s*​ulin) instead. Inulin is one member of a broader class of
+carbohydrates known as fructans, which are polymers of fructose.
+
+Fructans pop up in various plants and generally seem positively selected for. While the exact advantages conferred by
+fructans are not known, they at least seem to stabilize cell membranes under drought and freezing conditions.[fn::
+[[https://pmc.ncbi.nlm.nih.gov/articles/PMC2705711/]]] This is very likely a factor in the dominance of Asteraceae in
+semi-arid regions and why they are comparatively less common in rainforests.
+
+Interestingly fructans are also quite common among the Poaceae (the grass family), which are also quite hardy plants and
+share a lot of habitats with the Asteraceae.
 ** Secondary metabolites
-Secondary metabolites are xxx
-Plants produce a /lot/ of chemicals, they are basically little chemical factories with infinite energy as long as they
-don't get eaten.
+Secondary metabolites are any compounds a plant produces that aren't directly involved with growth or reproduction, so
+basically anything other than carbohydrates and proteins. Plants produce a /lot/ of chemicals; they are basically little
+chemical factories with infinite energy as long as they don't get eaten. To that end many plants produce a variety of
+secondary metabolites usually for purposes like discouraging insects and herbivores from eating them. Caffeine and
+nicotine for instance are both secondary metabolites produced by plants as insecticides. Sometimes secondary metabolites
+serve other functions too, like attracting insects to flowers.[fn:: You could do worse than assuming that everything
+plants do is either to attract insects or to repel insects.] [[https://pmc.ncbi.nlm.nih.gov/articles/PMC4521368/][Caffeine probably improves the memory of bees.]]
+
+Many Asteraceae species produce a very wide variety of secondary metabolites. Some of these, like [[https://en.wikipedia.org/wiki/Sesquiterpene_lactone][sesquiterpene
+lactones]], are bitter and toxic to insects and herbivores. Others are allelopathic and inhibit the growth of competing
+plants. Sunflowers, for example, produce a variety of compounds in their roots, leaves, and seeds that significantly
+slow the growth of other plants. This is fairly common across the Asteraceae.
+
+[[https://en.wikipedia.org/wiki/Artemisinin][Artemisinin]], the current gold standard treatment for malaria, is a secondary metabolite from the Asteraceae species
+/[[https://en.wikipedia.org/wiki/Artemisia_annua][Artemisia annua]]/ (a plant closely related to tarragon and wormwood).
+
+#+CAPTION: /Artemisia tridentata/
+[[./img/Artemisia_tridentata.jpg]]
+
+It's worth noting that the highest diversity of compounds is found in the Asteroideae subfamily, which accounts for
+about 70% of Asteraceae species.[fn:: https://www.sciencedirect.com/science/article/abs/pii/S105579031600083X] It's
+possible that aggressive secondary metabolites are actually the primary driver of Asteraceae success and diversity, even
+more than composite flower heads or inulin.
 * IV.
 All of this results in very well-optimized plants that reproduce fast and aggressively. Many Asteraceae species are
 extremely weedy, and they're often some of the first plants to colonize disturbed soil.
 * V.
-So why do I like them so much?
+So why do I like these plants so much?
 
 Well, mostly I just think they look nice. I like the color yellow. They often attract a lot of insects which I like to
 watch. Sunflowers are really iconic in Japanese media. That's about it really. From the perspective of engineering
@@ -212,13 +249,15 @@ out on the side of a highway and you'll probably find some kind of Asteraceae gr
 
 [cosmos image]
 
-I like that the flowers are both very pretty and (to me at least) intellectually interesting also. They're very
-different from most other plants, and there's a lot of room in the composite flower design space and different
-Asteraceae species do explore it. This whole post was motivated by me wondering what it was about composite flowers that
-made them so evolutionarily successful, and then finding out it might not even be the composite flowers themselves, or
-it might be a mixture of benefits from the composite flowers plus regular old chemical warfare.
+I like that the flowers are both very pretty and (to me at least) intellectually interesting too. They're very different
+from most other plants, and there's a lot of room in the composite flower design space and different Asteraceae species
+do explore it. This whole post was motivated by me wondering what it was about composite flowers that made them so
+evolutionarily successful, and then finding out it might not even be the composite flowers themselves, or it might be a
+mixture of benefits from the composite flowers plus regular old chemical warfare.
 
-I really like subantarctic islands and also the High Artic and it's neat that they're found in both places.
+I really like subantarctic islands and also the High Artic and it's neat that they're found in both places. Locally,
+there's also a lot of them in the more arid parts of western North America, which are some of my favorite areas of
+nature.
 
 [conclusion]
 
