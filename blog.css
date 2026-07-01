@@ -175,6 +175,7 @@ blockquote {
 	padding-left: 8px;
 }
 figcaption { font-size: 0.79em; font-style: italic; }
+figcaption i { font-style: normal; }
 .figure-number { display: none; }
 #table-of-contents { display: none; }
 .section-number-2, .section-number-3 { display: none; }
