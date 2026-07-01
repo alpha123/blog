@@ -24,7 +24,8 @@
   (setq *my/ob-last-exported-title* (my/ob-get-prop :title info))
   (setq *my/ob-last-exported-date* (my/ob-get-prop :date info))
   (let ((slug (file-name-sans-extension (file-name-nondirectory (plist-get info :input-file))))
-		(tags (plist-get info :blog-tags)))
+		(tags (plist-get info :blog-tags))
+		(head (plist-get info :html-head)))
 	(setq tags (if tags (split-string tags " ") nil))
 	(setq *my/ob-last-exported-tags* tags)
 	(concat
@@ -34,6 +35,7 @@
 	 "<title>" (my/ob-get-prop :title info) "</title>"
 	 "<author>" (my/ob-get-prop :author info) "</author>"
 	 "<tags>" (mapconcat (lambda (tg) (format "<tag>%s</tag>" tg)) tags) "</tags>"
+	 (if (and head (not (string-empty-p head))) (concat "<head>" head "</head>") "")
 	 "<content>" contents "</content>"
 	 "</post>")))
 
