@@ -2,6 +2,7 @@
 #+AUTHOR: pecan
 #+DATE: 2026-06-30
 #+BLOG_TAGS: faux-review plants
+#+HTML_HEAD: <style>main img { max-height: 500px; max-width: 730px; }</style>
 
 * I.
 You are probably familiar with sunflowers, dandelions, artichoke, lettuce, cosmos, daisies, dahlia, marigolds, tarragon,
@@ -10,7 +11,7 @@ are all in the same family of plants, the Asteraceae[fn:: /-aceae/ is the suffix
 something like ‘having the form of’. /Aster/ means star in Latin. Latin’s a dead language so you can pronounce it
 however you want, but most people say something like /​æ.stəˈɹei.si.iː​/ (i.e. “aster-ay-see-ee”).]. I happen to think
 these plants are really interesting. It’s probably my favorite family of flowering plants and I will attempt to explain
-why they’re so cool.
+why I think they’re so cool.
 
 Asteraceae is the largest family of flowering plants. With over 32,000 currently described species, they account for
 nearly 10% of all flowering plants. They are extremely widespread, inhabit every continent except Antarctica (though
@@ -83,21 +84,21 @@ reproductive structures, or pistillate (female).
 #+CAPTION: /Taraxacum officinale/ (common dandelion)
 [[./img/Taraxacum_officinale.jpg]]
 
-Exclusive to the tribe Cichorieae (including lettuce, dandelions, and chicory) are /ligulate/ heads, consisting of a
-single type of flower called ligulate flowers. Ligulate flowers are superficially very similar to ray flowers but they
-form differently, with all five petals fusing to form the ligule. This usually results in noticeable “teeth” at the end
-of the ligule, which represent the tips of the original petals. While ray flowers are either sterile or pistillate,
-ligulate flowers are all bisexual. Ligulate flowers are not found outside of the Cichorieae, but are nearly universal
-within that tribe. This is why dandelion seed heads look the way they do; each “petal” of the dandelion is an
-independent flower which turns into a seed.
+The tribe Cichorieae (including lettuce, dandelions, and chicory) has a unique type of capitulum called a /ligulate/
+head, consisting of a single type of flower called ligulate flowers. Ligulate flowers are superficially very similar to
+ray flowers but form differently, with all five petals fusing to form the ligule. This usually results in noticeable
+“teeth” at the end of the ligule, which represent the tips of the original petals. While ray flowers are either sterile
+or pistillate, ligulate flowers are all bisexual. Ligulate flowers are not found outside of the Cichorieae, but are
+nearly universal within that tribe. This is why dandelion seed heads look the way they do; each “petal” of the dandelion
+is an independent flower which turns into a seed.
 
 #+CAPTION: Dandelion teeth. Each one of the teeth is homologous to a petal on a normal flower. On species outside the Cichorieae you can sometimes find three teeth instead of five, but in my opinion they are usually less prominent.
 [[./img/teeth.png]]
 
 There are some minor subtypes of these head types as well, usually specific to various genera. There is also a
 surprising amount of variation in head type sometimes even within a species; however the genetics controlling the
-development of ray vs disc flowers works out it seems possible for mutations to occasionally result in individuals with
-a different type of flower head than is usual for that species. Many cultivated chrysanthemums and dahlias, for example,
+development of ray vs disc flowers work out it seems possible for mutations to occasionally result in individuals with a
+different type of flower head than is usual for that species. Many cultivated chrysanthemums and dahlias, for instance,
 have a mutation causing many or all of the disc flowers to turn into ray flowers.
 
 #+BEGIN_EXPORT html
@@ -147,11 +148,11 @@ place to land, etc.[fn:: This does raise the question of how Asteraceae species 
 functions. I don’t know if they attract fewer or different pollinators than the other types of composite head.] In this
 way composite flowers can look enough like a flower to fulfill those functions, but the energy cost required to make
 petals is amortized across many independent flowers. Similarly, the phyllaries of the whole head take over the
-protective functions of sepals, so the calyx[fn:: Collection of sepals (which are the petal-shaped leaf-like things
-below the petals of most plants).] on individual flowers instead develops into a modified calyx structure called a
-pappus. The pappus can either be extremely reduced, if not absent entirely, or it can function as a mechanism to help
-disperse the seeds. For example, in dandelions the pappus develops into a parachute structure to support wind dispersal.
-In some species the pappus develops into burs for mechanical dispersal. Repurposing sepals into efficient seed dispersal
+protective function of sepals, so the calyx[fn:: Collection of sepals (which are the petal-shaped leaf-like things below
+the petals of most plants).] on individual flowers instead develops into a modified calyx structure called a pappus. The
+pappus can either be extremely reduced, if not absent entirely, or it can function as a mechanism to help disperse the
+seeds. For example, in dandelions the pappus develops into a parachute structure to support wind dispersal. In some
+species the pappus develops into burs for mechanical dispersal. Repurposing sepals into efficient seed dispersal
 mechanisms is probably another minor factor in Asteraceae success.
 
 There’s some inherent redundancy in having a lot of little flowers too. Even if the composite flower head is severely
@@ -168,10 +169,10 @@ Most plants store energy as starch. One of the characteristic developments of th
 store energy as inulin (not to be confused with in​*s*​ulin) instead. Inulin is one member of a broader class of
 carbohydrates known as fructans, which are polymers of fructose.
 
-Fructans pop up in various plants and generally seem positively selected for. While the exact advantages conferred by
-fructans are not completely known, they at least seem to stabilize cell membranes under drought and freezing
-conditions.[fn:: [[https://pmc.ncbi.nlm.nih.gov/articles/PMC2705711/]]] This is very likely a factor in the dominance of
-Asteraceae in arid/semi-arid regions and why they are comparatively less common in rainforests.
+Fructans pop up in various taxa of plants and generally seem positively selected for. While the exact advantages
+conferred by fructans are not completely known, they at least seem to stabilize cell membranes under drought and
+freezing conditions.[fn:: [[https://pmc.ncbi.nlm.nih.gov/articles/PMC2705711/]]] This is very likely a factor in the
+dominance of Asteraceae in arid/semi-arid regions and why they are comparatively less common in rainforests.
 
 Interestingly fructans are also common among the Poaceae (the grass family), which are also quite hardy plants and
 share a lot of habitats with the Asteraceae.
@@ -186,8 +187,8 @@ plants do is either to attract insects or to repel insects.] [[https://pmc.ncbi.
 
 Many Asteraceae species produce a very wide variety of secondary metabolites. Some of these, like [[https://en.wikipedia.org/wiki/Sesquiterpene_lactone][sesquiterpene
 lactones]], are bitter and toxic to insects and herbivores. Others are allelopathic and inhibit the growth of competing
-plants. Sunflowers, for example, produce a variety of compounds in their roots, leaves, and seeds that significantly
-slow the growth of other plants. This is fairly common across the Asteraceae.
+plants. Sunflowers, for example, produce a variety of compounds in their roots, leaves, and seeds that slow the growth
+of other plants. This is fairly common across the Asteraceae.
 
 [[https://en.wikipedia.org/wiki/Artemisinin][Artemisinin]], the current gold standard treatment for malaria, is a secondary metabolite from the Asteraceae species
 /[[https://en.wikipedia.org/wiki/Artemisia_annua][Artemisia annua]]/ (a plant closely related to tarragon and wormwood).
@@ -232,8 +233,8 @@ allelopathic secondary metabolites in their pollen that interfere with the seed 
 carrying dandelion pollen pollinates another flower.[fn:: https://pollinationecology.org/index.php/jpe/article/view/286]
 There’s a reason they grow everywhere.
 
-That said, they’re not at all limited to only being small and fast herbs. There are quite a few longer-lived shrubs, and
-while trees are fairly rare among the Asteraceae there are even some of those too.
+That said, Asteraceae species are not at all limited to only being small and fast herbs. There are quite a few
+longer-lived shrubs, and while trees are fairly rare among the Asteraceae there are even some of those too.
 
 #+CAPTION: /Ericameria nauseosa/, a very drought-tolerant shrub from western North America.
 [[./img/Ericameria_nauseosa.jpg]]
@@ -264,16 +265,16 @@ explore. This whole post was motivated by me wondering what it was about composi
 evolutionarily successful, and then finding out it might not even be the composite flowers themselves, or it might be a
 mixture of benefits from the composite flowers plus regular old chemical warfare.
 
-I really like subantarctic islands and also the High Artic and it’s neat that they’re found in both places. There are
+I really like subantarctic islands and also the High Arctic and it’s neat that they’re found in both places. There are
 also a lot of them in the more arid parts of western North America, which I have a bit of a bias towards.
 
 One sort of weird trivia is that Asteraceae species tend to have numbers of ray flowers distributed according to the
-Fibonacci sequence (this actually isn’t too uncommon for true petals in other families of plants either, but usually
-they have fewer), for example 5, 8, or 13 are all common numbers of ray flowers. Sunflowers take this even further and
-their disc flowers are arranged in alternating spirals where each disc flower is rotated from the previous by π(3 - √5)
-rad (i.e. the golden angle). The number of clockwise and counterclockwise spirals are two successive Fibonacci numbers,
-typically 34 / 55, 55 / 89, or 89 / 144. This arrangement produces the mathematically optimal packing of seeds within
-the flower head, which I think is neat.
+Fibonacci sequence (this actually isn’t too uncommon for petals in other families of plants either), for example 5, 8,
+or 13 are all common numbers of ray flowers. Sunflowers take this even further and their disc flowers are arranged in
+alternating spirals where each disc flower is rotated from the previous by π(3 - √5) rad (i.e. the golden angle). The
+number of clockwise and counterclockwise spirals are two successive Fibonacci numbers, typically 34 / 55, 55 / 89, or 89
+/ 144. This arrangement produces the mathematically optimal packing of seeds within the flower head, which I think is
+neat.
 
 Anyway, 10/10 family of flowering plants. I think they’re super interesting, and hopefully now you do too, or at least
 maybe you’ll have a renewed appreciation for sunflowers and miscellaneous noxious weeds. And next time you’re out in
